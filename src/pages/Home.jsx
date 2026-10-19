@@ -648,7 +648,7 @@ export default function Home() {
                 </p>
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://wa.me/6285183003076?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
+                    href="https://wa.me/6287777809578?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -732,7 +732,7 @@ export default function Home() {
           </p>
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/6285183003076?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
+              href="https://wa.me/6287777809578?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -35,7 +35,7 @@ export default function ERPPage() {
                 Sistem ERP terpadu untuk mengelola POS kasir, inventaris kadar, kalkulasi buyback, mutasi gramasi fisik, dan operasional multi-cabang secara real-time.
               </p>
               <div className="pt-2 flex flex-wrap gap-4">
-                <a href="https://wa.me/6285183003076" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/6287777809578" target="_blank" rel="noopener noreferrer">
                   <Button
                     data-testid="erp-request-demo-button"
                     className="h-12 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-7 shadow-lg shadow-amber-600/25"

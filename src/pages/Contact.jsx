@@ -18,8 +18,8 @@ export default function Contact() {
     {
       icon: MessageCircle,
       label: "WhatsApp",
-      value: "+62 851-8300-3076",
-      href: "https://wa.me/6285183003076",
+      value: "087777809578",
+      href: "https://wa.me/6287777809578",
       testid: "contact-channel-whatsapp",
     },
     {

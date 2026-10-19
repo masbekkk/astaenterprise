@@ -1,6 +1,6 @@
 const BRAND = Object.freeze({
   name: 'BerkahEmas', descriptor: 'Software Toko Emas', version: '1.0.0',
-  baseUrl: 'https://berkahemas.web.id', whatsapp: '6285183003076',
+  baseUrl: 'https://berkahemas.web.id', whatsapp: '6287777809578',
 });
 
 function buildGraph(lang, faqItems = []) {
@@ -16,7 +16,7 @@ function buildGraph(lang, faqItems = []) {
         url: en ? `${base}/en` : `${base}/`, image: `${base}/og-image.png`, publisher: { '@id': `${base}/#organization` } },
       { '@type': 'Organization', '@id': `${base}/#organization`, name: BRAND.name,
         url: `${base}/`, logo: `${base}/favicon.png`, sameAs: ['https://www.instagram.com/berkahemas.web.id'],
-        contactPoint: { '@type': 'ContactPoint', telephone: '+62-851-8300-3076', contactType: 'Sales', availableLanguage: ['Indonesian', 'English'] } },
+        contactPoint: { '@type': 'ContactPoint', telephone: '+6287777809578', contactType: 'Sales', availableLanguage: ['Indonesian', 'English'] } },
       { '@type': 'WebSite', '@id': `${base}/#website`, name: BRAND.name,
         url: `${base}/`, inLanguage: en ? 'en' : 'id', publisher: { '@id': `${base}/#organization` } },
       { '@type': 'FAQPage', '@id': `${base}/#faq`, mainEntity: faqItems.map(item => ({
