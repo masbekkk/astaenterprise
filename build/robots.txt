@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Dedicated AI and Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://berkahemas.web.id/sitemap.xml
+Host: https://berkahemas.web.id
