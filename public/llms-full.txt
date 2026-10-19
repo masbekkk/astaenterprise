@@ -1,0 +1,17 @@
+# BerkahEmas — Software Toko Emas
+
+BerkahEmas is ready-to-use software for Indonesian gold-store operations.
+Its product workflows include inventory, POS sales and invoices, buyback records, and reports.
+
+## Product links
+- Website: https://astaenterprise.id/
+- English: https://astaenterprise.id/en
+- Features: https://astaenterprise.id/#features
+- Demo inquiry: https://wa.me/6285183003076
+- Email: hello@astaenterprise.id
+- Instagram: https://www.instagram.com/astaenterprise.id
+
+The existing technical domain and contacts remain in use during the product rebrand.
+Request a demo to review store workflows, current plans and device requirements.
+No customer-count, rating, certification, revenue or synchronization-speed claims are asserted here.
+Screenshots use fictional demonstration data. Confirm hardware compatibility and commercial terms with the team.

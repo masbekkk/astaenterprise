@@ -1,0 +1,515 @@
+{
+  "id": {
+    "meta": {
+      "title": "BerkahEmas — Software Toko Emas",
+      "description": "Software toko emas untuk inventori, POS kasir, buyback, dan laporan. Kenali alurnya dan minta demo BerkahEmas.",
+      "keywords": "software toko emas, aplikasi kasir emas, inventori emas, buyback, BerkahEmas"
+    },
+    "nav": {
+      "features": "Fitur Unggulan",
+      "howItWorks": "Cara Kerja",
+      "gallery": "Galeri Modul",
+      "pricing": "Harga",
+      "faq": "FAQ",
+      "ecosystem": "Produk",
+      "whatsapp": "WhatsApp",
+      "requestDemo": "Minta Demo",
+      "erp": {
+        "title": "ERP Software Emas",
+        "desc": "Sistem POS & inventori lengkap"
+      },
+      "contact": "Kontak"
+    },
+    "hero": {
+      "badge": "Untuk operasional toko emas",
+      "titleStart": "BerkahEmas — ",
+      "titleHighlight": "Software Toko Emas",
+      "subheadline": "Inventori, POS kasir, buyback, dan laporan dalam satu aplikasi. Kenali alur BerkahEmas untuk operasional harian toko Anda.",
+      "ctaPrimary": "Minta Demo BerkahEmas",
+      "ctaSecondary": "Lihat Fitur",
+      "highlights": [
+        "Inventori",
+        "POS Kasir",
+        "Buyback",
+        "Laporan"
+      ]
+    },
+    "painPoints": null,
+    "features": {
+      "title": "Alur kerja harian toko emas",
+      "subtitle": "Kenali produk melalui layar inventori, kasir, buyback, dan laporan.",
+      "items": [
+        {
+          "id": "inventory",
+          "badge": "Inventori Emas",
+          "title": "Stok dengan rincian kadar dan gramasi",
+          "desc": "Cari dan filter perhiasan berdasarkan nama, kategori, kadar, dan lokasi.",
+          "highlights": [
+            "Nama, SKU dan barcode produk",
+            "Berat dan kadar perhiasan",
+            "Filter kategori dan lokasi"
+          ],
+          "image": "/assets/screenshots/inventory.webp",
+          "url": "app.astaenterprise.id/inventori",
+          "imageBadge": "Data demo"
+        },
+        {
+          "id": "pos",
+          "badge": "POS Kasir",
+          "title": "Dari pilihan produk sampai nota",
+          "desc": "Pilih produk, periksa total, dan simpan transaksi penjualan. Tampilkan nota dari transaksi yang selesai.",
+          "highlights": [
+            "Pencarian produk di kasir",
+            "Rincian keranjang dan pembayaran",
+            "Nota dari transaksi tersimpan"
+          ],
+          "image": "/assets/screenshots/pos.webp",
+          "url": "app.astaenterprise.id/pos",
+          "imageBadge": "Data demo"
+        },
+        {
+          "id": "buyback",
+          "badge": "Buyback",
+          "title": "Catatan pembelian kembali yang terstruktur",
+          "desc": "Masukkan detail perhiasan dan nilai buyback, lalu simpan catatannya untuk ditinjau kembali.",
+          "highlights": [
+            "Nama dan detail perhiasan",
+            "Kadar, berat, dan nilai buyback",
+            "Riwayat dan status buyback"
+          ],
+          "image": "/assets/screenshots/buyback.webp",
+          "url": "app.astaenterprise.id/buyback",
+          "imageBadge": "Data demo"
+        },
+        {
+          "id": "reports",
+          "badge": "Laporan",
+          "title": "Tinjau transaksi berdasarkan periode",
+          "desc": "Buka ringkasan laporan dan gunakan filter periode untuk meninjau catatan operasional toko.",
+          "highlights": [
+            "Filter periode laporan",
+            "Ringkasan transaksi dan buyback",
+            "Tampilan cetak laporan"
+          ],
+          "image": "/assets/screenshots/reports.webp",
+          "url": "app.astaenterprise.id/laporan",
+          "imageBadge": "Data demo"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Mulai dari demo produk",
+      "subtitle": "Bahas alur toko Anda sebelum memilih paket.",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Minta demo",
+          "desc": "Ceritakan toko dan pekerjaan yang ingin Anda tinjau."
+        },
+        {
+          "num": "02",
+          "title": "Lihat alurnya",
+          "desc": "Kenali inventori, POS, buyback, dan laporan saat demo."
+        },
+        {
+          "num": "03",
+          "title": "Bahas kebutuhan toko",
+          "desc": "Tinjau pengguna, cabang, persiapan data, dan perangkat yang diperlukan."
+        },
+        {
+          "num": "04",
+          "title": "Pilih paket",
+          "desc": "Konfirmasikan penawaran dan langkah berikutnya dengan tim."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Lihat layar aplikasinya",
+      "subtitle": "Tangkapan layar menggunakan data demo fiktif.",
+      "liveBadge": "Data demo",
+      "modules": [
+        {
+          "title": "Inventori Emas",
+          "desc": "Cari dan filter perhiasan berdasarkan nama, kategori, kadar, dan lokasi.",
+          "image": "/assets/screenshots/inventory.webp",
+          "url": "app.astaenterprise.id/inventori",
+          "badge": "Data demo"
+        },
+        {
+          "title": "POS Kasir",
+          "desc": "Pilih produk, periksa total, dan simpan transaksi penjualan. Tampilkan nota dari transaksi yang selesai.",
+          "image": "/assets/screenshots/pos.webp",
+          "url": "app.astaenterprise.id/pos",
+          "badge": "Data demo"
+        },
+        {
+          "title": "Buyback",
+          "desc": "Masukkan detail perhiasan dan nilai buyback, lalu simpan catatannya untuk ditinjau kembali.",
+          "image": "/assets/screenshots/buyback.webp",
+          "url": "app.astaenterprise.id/buyback",
+          "badge": "Data demo"
+        },
+        {
+          "title": "Laporan",
+          "desc": "Buka ringkasan laporan dan gunakan filter periode untuk meninjau catatan operasional toko.",
+          "image": "/assets/screenshots/reports.webp",
+          "url": "app.astaenterprise.id/laporan",
+          "badge": "Data demo"
+        }
+      ]
+    },
+    "testimonials": null,
+    "pricing": {
+      "title": "Pilihan Paket Sesuai Skala Toko Emas",
+      "subtitle": "Konfirmasikan harga terbaru, fitur paket, dan kebutuhan persiapan dengan tim.",
+      "periodMonth": "/ bulan",
+      "popularBadge": "Pilihan Paket",
+      "tiers": [
+        {
+          "name": "Starter",
+          "tagline": "Ideal untuk toko emas mandiri yang ingin beralih ke pembukuan & POS digital.",
+          "price": "Rp 499.000",
+          "period": "/ bulan",
+          "featured": false,
+          "features": [
+            "1 Cabang Toko Emas",
+            "Hingga 3 Akun Kasir & Staf",
+            "POS Kasir & Barcode Scanner",
+            "Manajemen Stok per Kadar (6K - 24K)",
+            "Update Harga Emas Massal",
+            "Cetak Label Barcode & Surat Emas",
+            "Laporan Penjualan Harian"
+          ],
+          "ctaText": "Minta Demo",
+          "badge": null
+        },
+        {
+          "name": "Professional",
+          "tagline": "Paling populer untuk toko emas berkembang dengan multi-kasir dan transaksi tinggi.",
+          "price": "Rp 1.199.000",
+          "period": "/ bulan",
+          "featured": true,
+          "badge": "Pilihan Paket",
+          "features": [
+            "Hingga 3 Cabang Toko Emas",
+            "Semua Fitur Paket Starter",
+            "Modul Buyback Emas Transparan",
+            "Laporan Mutasi Gramasi & Laba Rugi",
+            "Audit Trail & Log Keamanan Lengkap",
+            "Transfer Stok Antar Cabang",
+            "Migrasi Data Excel Dibantu Tim Ahli"
+          ],
+          "ctaText": "Minta Demo"
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "Solusi lengkap untuk jaringan toko emas besar, pengrajin, dan distributor.",
+          "price": "Kustom",
+          "period": "",
+          "featured": false,
+          "features": [
+            "Pelatihan Staf Onsite di Toko"
+          ],
+          "ctaText": "Minta Demo",
+          "badge": null
+        }
+      ],
+      "banner": null
+    },
+    "faq": {
+      "title": "Pertanyaan sebelum demo",
+      "subtitle": "Mulai dari alur yang dibutuhkan toko Anda.",
+      "items": [
+        {
+          "q": "Apa itu BerkahEmas?",
+          "a": "BerkahEmas adalah software toko emas dengan alur inventori, POS kasir, buyback, dan laporan."
+        },
+        {
+          "q": "Bisa melihat aplikasinya sebelum memilih paket?",
+          "a": "Minta demo melalui WhatsApp dan sampaikan alur yang ingin Anda tinjau bersama tim."
+        },
+        {
+          "q": "Bisa menggunakan identitas toko pada nota?",
+          "a": "Aplikasi menyediakan pengaturan nota untuk rincian toko dan logo yang diunggah."
+        },
+        {
+          "q": "Apakah perangkat toko saya bisa digunakan?",
+          "a": "Sampaikan model scanner, printer, dan perangkat lainnya. Konfirmasikan kompatibilitas saat demo sebelum memilih paket."
+        }
+      ]
+    },
+    "footer": {
+      "brandDesc": "Software toko emas untuk inventori, POS kasir, buyback, dan laporan.",
+      "locations": "Jakarta & Surabaya, Indonesia",
+      "email": "hello@astaenterprise.id",
+      "whatsapp": "+62 851-8300-3076 (Konsultasi WhatsApp)",
+      "instagram": "@astaenterprise.id",
+      "instagramUrl": "https://www.instagram.com/astaenterprise.id",
+      "modulesTitle": "Alur Produk",
+      "ecosystemTitle": "Kenali Produk",
+      "securityTitle": "Lihat alurnya",
+      "copyright": "BerkahEmas. Hak cipta dilindungi.",
+      "helpFaq": "Bantuan & FAQ",
+      "contactSupport": "Hubungi Support"
+    },
+    "whatsapp": {
+      "tooltip": "Minta demo BerkahEmas",
+      "prefill": "Halo BerkahEmas, saya ingin meminta demo Software Toko Emas."
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "BerkahEmas — Gold Store Software",
+      "description": "Inventory, POS, buyback and reporting for gold stores. Request a BerkahEmas demo.",
+      "keywords": "gold store software, jewelry POS, inventory, buyback, BerkahEmas"
+    },
+    "nav": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "gallery": "Module Gallery",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "ecosystem": "Product",
+      "whatsapp": "WhatsApp",
+      "requestDemo": "Request a Demo",
+      "erp": {
+        "title": "Gold ERP Software",
+        "desc": "Complete POS & inventory system"
+      },
+      "contact": "Contact"
+    },
+    "hero": {
+      "badge": "For gold-store operations",
+      "titleStart": "BerkahEmas — ",
+      "titleHighlight": "Gold Store Software",
+      "subheadline": "Inventory, POS, buyback and reporting in one application. See how BerkahEmas fits your store’s daily workflow.",
+      "ctaPrimary": "Request a BerkahEmas Demo",
+      "ctaSecondary": "Explore Features",
+      "highlights": [
+        "Inventory",
+        "POS",
+        "Buyback",
+        "Reports"
+      ]
+    },
+    "painPoints": null,
+    "features": {
+      "title": "Built around daily store tasks",
+      "subtitle": "Explore the product through its inventory, checkout, buyback and reporting screens.",
+      "items": [
+        {
+          "id": "inventory",
+          "badge": "Gold Inventory",
+          "title": "Inventory by weight and purity",
+          "desc": "Search and filter jewelry by name, category, purity, and location.",
+          "highlights": [
+            "Product name, SKU and barcode",
+            "Jewelry weight and purity",
+            "Category and location filters"
+          ],
+          "image": "/assets/screenshots/inventory.webp",
+          "url": "app.astaenterprise.id/inventori",
+          "imageBadge": "Demo data"
+        },
+        {
+          "id": "pos",
+          "badge": "Point of Sale",
+          "title": "From product selection to invoice",
+          "desc": "Select products, review the total, and save a sale. View the invoice for the completed transaction.",
+          "highlights": [
+            "Product search at checkout",
+            "Cart and payment details",
+            "Invoice for the saved sale"
+          ],
+          "image": "/assets/screenshots/pos.webp",
+          "url": "app.astaenterprise.id/pos",
+          "imageBadge": "Demo data"
+        },
+        {
+          "id": "buyback",
+          "badge": "Buyback",
+          "title": "Structured buyback records",
+          "desc": "Enter jewelry details and the buyback value, then save the record for review.",
+          "highlights": [
+            "Jewelry item details",
+            "Purity, weight and buyback value",
+            "Buyback history and status"
+          ],
+          "image": "/assets/screenshots/buyback.webp",
+          "url": "app.astaenterprise.id/buyback",
+          "imageBadge": "Demo data"
+        },
+        {
+          "id": "reports",
+          "badge": "Reports",
+          "title": "Review transactions by period",
+          "desc": "Open the report summary and use period filters to review store records.",
+          "highlights": [
+            "Reporting period filters",
+            "Sales and buyback summaries",
+            "Printable reports"
+          ],
+          "image": "/assets/screenshots/reports.webp",
+          "url": "app.astaenterprise.id/laporan",
+          "imageBadge": "Demo data"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Start with a product demo",
+      "subtitle": "Discuss your store’s workflow before choosing a plan.",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Request a demo",
+          "desc": "Tell us about your store and the tasks you want to review."
+        },
+        {
+          "num": "02",
+          "title": "Review the workflows",
+          "desc": "Explore inventory, POS, buyback and reports during the demo."
+        },
+        {
+          "num": "03",
+          "title": "Discuss your requirements",
+          "desc": "Review users, branches, data preparation and device requirements."
+        },
+        {
+          "num": "04",
+          "title": "Choose a plan",
+          "desc": "Confirm the current offer and next steps with the team."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "See the application screens",
+      "subtitle": "Screenshots use fictional demo data.",
+      "liveBadge": "Demo data",
+      "modules": [
+        {
+          "title": "Gold Inventory",
+          "desc": "Search and filter jewelry by name, category, purity, and location.",
+          "image": "/assets/screenshots/inventory.webp",
+          "url": "app.astaenterprise.id/inventori",
+          "badge": "Demo data"
+        },
+        {
+          "title": "Point of Sale",
+          "desc": "Select products, review the total, and save a sale. View the invoice for the completed transaction.",
+          "image": "/assets/screenshots/pos.webp",
+          "url": "app.astaenterprise.id/pos",
+          "badge": "Demo data"
+        },
+        {
+          "title": "Buyback",
+          "desc": "Enter jewelry details and the buyback value, then save the record for review.",
+          "image": "/assets/screenshots/buyback.webp",
+          "url": "app.astaenterprise.id/buyback",
+          "badge": "Demo data"
+        },
+        {
+          "title": "Reports",
+          "desc": "Open the report summary and use period filters to review store records.",
+          "image": "/assets/screenshots/reports.webp",
+          "url": "app.astaenterprise.id/laporan",
+          "badge": "Demo data"
+        }
+      ]
+    },
+    "testimonials": null,
+    "pricing": {
+      "title": "Transparent Plans for Every Jewelry Retailer",
+      "subtitle": "Confirm the current price, included features and onboarding requirements with the team.",
+      "periodMonth": "/ month",
+      "popularBadge": "Featured",
+      "tiers": [
+        {
+          "name": "Starter",
+          "tagline": "Ideal for independent gold stores transitioning to digital POS and inventory control.",
+          "price": "Rp 499,000",
+          "period": "/ month",
+          "featured": false,
+          "features": [
+            "1 Gold Store Location",
+            "Up to 3 Cashier & Staff Accounts",
+            "POS Register & Barcode Tag Scanner",
+            "Multi-Karat Inventory Control (6K - 24K)",
+            "Batch Gold Rate Updater",
+            "Thermal Jewelry Label & Certificate Printing",
+            "Daily Sales & Revenue Reports"
+          ],
+          "ctaText": "Request a Demo",
+          "badge": null
+        },
+        {
+          "name": "Professional",
+          "tagline": "Most popular for growing jewelry retailers with multiple cashiers and high transaction volumes.",
+          "price": "Rp 1,199,000",
+          "period": "/ month",
+          "featured": true,
+          "badge": "Featured",
+          "features": [
+            "Up to 3 Store Locations",
+            "All Starter Plan Features Included",
+            "Physical Gold Gram Mutation & P&L Ledgers",
+            "Complete Security Audit Trail & Activity Logs",
+            "Inter-Branch Stock Transfer with Waybills",
+            "Complimentary Excel Data Migration by Experts"
+          ],
+          "ctaText": "Request a Demo"
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "Complete multi-branch business operating system for jewelry store chains, manufacturers, and distributors.",
+          "price": "Custom",
+          "period": "",
+          "featured": false,
+          "features": [],
+          "ctaText": "Request a Demo",
+          "badge": null
+        }
+      ],
+      "banner": null
+    },
+    "faq": {
+      "title": "Questions before a demo",
+      "subtitle": "Start with the workflows that matter to your store.",
+      "items": [
+        {
+          "q": "What is BerkahEmas?",
+          "a": "BerkahEmas is gold-store software with inventory, POS, buyback and reporting workflows."
+        },
+        {
+          "q": "Can I see the software before choosing a plan?",
+          "a": "Request a demo through WhatsApp and tell the team which workflows you would like to review."
+        },
+        {
+          "q": "Can I use my store’s details on invoices?",
+          "a": "The application includes invoice settings for your store’s details and uploaded logo."
+        },
+        {
+          "q": "Will it work with my existing devices?",
+          "a": "Share the models of your scanner, printer and other devices. Confirm compatibility during the demo before choosing a plan."
+        }
+      ]
+    },
+    "footer": {
+      "brandDesc": "Gold-store software for inventory, POS, buyback and reporting.",
+      "locations": "Jakarta & Surabaya, Indonesia",
+      "email": "hello@astaenterprise.id",
+      "whatsapp": "+62 851-8300-3076 (WhatsApp Consultation)",
+      "instagram": "@astaenterprise.id",
+      "instagramUrl": "https://www.instagram.com/astaenterprise.id",
+      "modulesTitle": "Product workflows",
+      "ecosystemTitle": "Explore",
+      "securityTitle": "See the workflow",
+      "copyright": "BerkahEmas. All rights reserved.",
+      "helpFaq": "Help & FAQ",
+      "contactSupport": "Contact Support"
+    },
+    "whatsapp": {
+      "tooltip": "Request a BerkahEmas demo",
+      "prefill": "Hello BerkahEmas, I would like a demo of the gold-store software."
+    }
+  }
+}

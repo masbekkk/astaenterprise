@@ -1,0 +1,42 @@
+name: Build and push to build branch
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+        env:
+            REACT_APP_SPREADSHEET_URL: ${{ secrets.REACT_APP_SPREADSHEET_URL }}
+            REACT_APP_WORDPRESS_API_URL: ${{ secrets.REACT_APP_WORDPRESS_API_URL }}
+            REACT_APP_BACKEND_URL: ${{ secrets.REACT_APP_BACKEND_URL }}
+
+      - name: Commit and push to build branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B build
+
+          git add -f build/
+
+          git commit -m "Auto-build from main ($GITHUB_SHA)" || echo "No changes to commit"
+
+          git push origin build --force
