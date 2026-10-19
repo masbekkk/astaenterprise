@@ -10,7 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   useEffect(() => setOpen(false), [pathname]);
-  const links = [['features', t.nav.features], ['how-it-works', t.nav.howItWorks], ['gallery', t.nav.gallery], ['pricing', t.nav.pricing], ['faq', t.nav.faq]];
+  const links = [['features', t.nav.features], ['store-access', t.nav.storeAccess], ['how-it-works', t.nav.howItWorks], ['gallery', t.nav.gallery], ['pricing', t.nav.pricing], ['faq', t.nav.faq]];
   return <header data-testid="site-navbar" className="sticky top-0 z-50 border-b border-[#DFE5DD] bg-[#F8F6EF]/95 backdrop-blur-xl">
     <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-6 md:px-10">
       <Logo />

@@ -146,7 +146,7 @@ export default function MediaDetailPage() {
         title={`${article.title[lang]} - AstaEnterprise`}
         description={article.excerpt[lang]}
         image={article.image}
-        canonical={`https://astaenterprise.id/media/${article.slug}`}
+        canonical={`https://berkahemas.web.id/media/${article.slug}`}
         type="article"
       />
       {/* Navigation & Header */}

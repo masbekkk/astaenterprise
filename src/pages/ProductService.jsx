@@ -15,7 +15,7 @@ export default function ProductService() {
       <SEO
         title={lang === "id" ? "Produk & Layanan Bisnis Emas - AstaEnterprise" : "Gold Business Products & Services - AstaEnterprise"}
         description={lang === "id" ? "Jelajahi ekosistem layanan AstaEnterprise mulai dari platform digital toko emas, sistem gadai, hingga manajemen pasok emas ritel." : "Explore the AstaEnterprise ecosystem, from digital gold shop platforms and pawn systems to retail gold supply chain management."}
-        canonical="https://astaenterprise.id/product-service"
+        canonical="https://berkahemas.web.id/product-service"
         keywords="layanan asta enterprise, bisnis emas ritel, suplai emas, sistem manajemen emas, retail gold business, gold supply chain, gold management system"
       />
       <section className="border-b border-border" data-testid="product-service-hero">

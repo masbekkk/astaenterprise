@@ -21,7 +21,7 @@ export default function Books() {
       <SEO
         title={lang === "id" ? "Buku & Publikasi Bisnis Emas - AstaEnterprise" : "Gold Business Books & Publications - AstaEnterprise"}
         description={lang === "id" ? "Koleksi panduan, modul, dan buku referensi industri emas terlengkap yang ditulis oleh para ahli di AstaEnterprise." : "The most comprehensive collection of gold industry guides, modules, and reference books written by experts at AstaEnterprise."}
-        canonical="https://astaenterprise.id/books"
+        canonical="https://berkahemas.web.id/books"
         keywords="buku bisnis emas, modul taksir emas, panduan investasi emas, buku asta enterprise, gold business books, gold appraisal module, gold investment guide"
       />
       <section className="border-b border-border" data-testid="books-hero">

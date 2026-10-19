@@ -15,7 +15,7 @@ export default function Academy() {
       <SEO
         title={lang === "id" ? "Asta Academy — Edukasi & Pelatihan Bisnis Emas" : "Asta Academy — Gold Business Education & Training"}
         description={lang === "id" ? "Kembangkan keahlian Anda dalam industri emas. Pelatihan taksiran emas, sertifikasi, regulasi, dan manajemen operasional toko emas." : "Develop your expertise in the gold industry. Gold appraisal training, certification, regulations, and gold shop operations management."}
-        canonical="https://astaenterprise.id/academy"
+        canonical="https://berkahemas.web.id/academy"
         keywords="belajar taksiran emas, pelatihan bisnis emas, asta academy, sekolah emas, sertifikasi taksir emas, gold appraisal training, gold appraiser certification"
       />
       <section className="border-b border-border" data-testid="academy-hero">

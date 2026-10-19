@@ -155,7 +155,7 @@ export default function MediaPage() {
       <SEO
         title={lang === "id" ? "Media & Edukasi Emas - AstaEnterprise" : "Media & Gold Education - AstaEnterprise"}
         description={lang === "id" ? "Wawasan industri ritel emas, update harga, taksiran, teknologi, dan tips bisnis dari tim ahli AstaEnterprise." : "Insights into the gold retail industry, price updates, appraisals, technology, and business tips from AstaEnterprise."}
-        canonical="https://astaenterprise.id/media"
+        canonical="https://berkahemas.web.id/media"
         keywords="berita emas, edukasi emas, harga emas hari ini, tips bisnis emas, berita asta enterprise, gold news, gold education, gold price today"
       />
       <section className="border-b border-border" data-testid="media-hero">

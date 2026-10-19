@@ -5,7 +5,7 @@ export default function BrowserMockup({
   src,
   alt = "BerkahEmas ERP Screenshot",
   title = "BerkahEmas — Software Toko Emas",
-  url = "app.astaenterprise.id/dashboard",
+  url = "app.berkahemas.web.id/dashboard",
   badge = "Data demo",
   className = "",
   glow = true,

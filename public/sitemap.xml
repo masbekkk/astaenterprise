@@ -3,10 +3,10 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Indonesian Single Page Landing (Default) -->
   <url>
-    <loc>https://astaenterprise.id/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://astaenterprise.id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://astaenterprise.id/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://astaenterprise.id/" />
+    <loc>https://berkahemas.web.id/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://berkahemas.web.id/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://berkahemas.web.id/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://berkahemas.web.id/" />
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,10 +14,10 @@
 
   <!-- English Single Page Landing -->
   <url>
-    <loc>https://astaenterprise.id/en</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://astaenterprise.id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://astaenterprise.id/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://astaenterprise.id/" />
+    <loc>https://berkahemas.web.id/en</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://berkahemas.web.id/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://berkahemas.web.id/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://berkahemas.web.id/" />
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

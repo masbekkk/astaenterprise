@@ -18,7 +18,8 @@
         "title": "ERP Software Emas",
         "desc": "Sistem POS & inventori lengkap"
       },
-      "contact": "Kontak"
+      "contact": "Kontak",
+      "storeAccess": "Data & Akses"
     },
     "hero": {
       "badge": "Untuk operasional toko emas",
@@ -50,7 +51,7 @@
             "Filter kategori dan lokasi"
           ],
           "image": "/assets/screenshots/inventory.webp",
-          "url": "app.astaenterprise.id/inventori",
+          "url": "app.berkahemas.web.id/inventori",
           "imageBadge": "Data demo"
         },
         {
@@ -64,7 +65,7 @@
             "Nota dari transaksi tersimpan"
           ],
           "image": "/assets/screenshots/pos.webp",
-          "url": "app.astaenterprise.id/pos",
+          "url": "app.berkahemas.web.id/pos",
           "imageBadge": "Data demo"
         },
         {
@@ -78,7 +79,7 @@
             "Riwayat dan status buyback"
           ],
           "image": "/assets/screenshots/buyback.webp",
-          "url": "app.astaenterprise.id/buyback",
+          "url": "app.berkahemas.web.id/buyback",
           "imageBadge": "Data demo"
         },
         {
@@ -92,7 +93,7 @@
             "Tampilan cetak laporan"
           ],
           "image": "/assets/screenshots/reports.webp",
-          "url": "app.astaenterprise.id/laporan",
+          "url": "app.berkahemas.web.id/laporan",
           "imageBadge": "Data demo"
         }
       ]
@@ -132,28 +133,28 @@
           "title": "Inventori Emas",
           "desc": "Cari dan filter perhiasan berdasarkan nama, kategori, kadar, dan lokasi.",
           "image": "/assets/screenshots/inventory.webp",
-          "url": "app.astaenterprise.id/inventori",
+          "url": "app.berkahemas.web.id/inventori",
           "badge": "Data demo"
         },
         {
           "title": "POS Kasir",
           "desc": "Pilih produk, periksa total, dan simpan transaksi penjualan. Tampilkan nota dari transaksi yang selesai.",
           "image": "/assets/screenshots/pos.webp",
-          "url": "app.astaenterprise.id/pos",
+          "url": "app.berkahemas.web.id/pos",
           "badge": "Data demo"
         },
         {
           "title": "Buyback",
           "desc": "Masukkan detail perhiasan dan nilai buyback, lalu simpan catatannya untuk ditinjau kembali.",
           "image": "/assets/screenshots/buyback.webp",
-          "url": "app.astaenterprise.id/buyback",
+          "url": "app.berkahemas.web.id/buyback",
           "badge": "Data demo"
         },
         {
           "title": "Laporan",
           "desc": "Buka ringkasan laporan dan gunakan filter periode untuk meninjau catatan operasional toko.",
           "image": "/assets/screenshots/reports.webp",
-          "url": "app.astaenterprise.id/laporan",
+          "url": "app.berkahemas.web.id/laporan",
           "badge": "Data demo"
         }
       ]
@@ -235,16 +236,24 @@
         {
           "q": "Apakah perangkat toko saya bisa digunakan?",
           "a": "Sampaikan model scanner, printer, dan perangkat lainnya. Konfirmasikan kompatibilitas saat demo sebelum memilih paket."
+        },
+        {
+          "q": "Apakah setiap bisnis menggunakan database tersendiri?",
+          "a": "Ya. BerkahEmas menyiapkan database terpisah untuk setiap bisnis. Cabang dalam bisnis yang sama dapat dikelola dalam satu sistem."
+        },
+        {
+          "q": "Bisa menggunakan subdomain atau domain bisnis sendiri?",
+          "a": "Akses toko menggunakan subdomain khusus yang disiapkan untuk bisnis Anda. Untuk domain bisnis sendiri, konfirmasikan ketersediaan dan kebutuhan pengaturannya bersama tim saat demo."
         }
       ]
     },
     "footer": {
       "brandDesc": "Software toko emas untuk inventori, POS kasir, buyback, dan laporan.",
       "locations": "Jakarta & Surabaya, Indonesia",
-      "email": "hello@astaenterprise.id",
+      "email": "hello@berkahemas.web.id",
       "whatsapp": "+62 851-8300-3076 (Konsultasi WhatsApp)",
-      "instagram": "@astaenterprise.id",
-      "instagramUrl": "https://www.instagram.com/astaenterprise.id",
+      "instagram": "@berkahemas.web.id",
+      "instagramUrl": "https://www.instagram.com/berkahemas.web.id",
       "modulesTitle": "Alur Produk",
       "ecosystemTitle": "Kenali Produk",
       "securityTitle": "Lihat alurnya",
@@ -255,6 +264,32 @@
     "whatsapp": {
       "tooltip": "Minta demo BerkahEmas",
       "prefill": "Halo BerkahEmas, saya ingin meminta demo Software Toko Emas."
+    },
+    "storeAccess": {
+      "eyebrow": "Data & Akses Toko",
+      "title": "Ruang operasional untuk bisnis toko Anda.",
+      "subtitle": "Database tersendiri dan alamat akses khusus membantu setiap bisnis menggunakan BerkahEmas untuk operasional tokonya.",
+      "exampleLabel": "Contoh alamat akses",
+      "items": [
+        {
+          "id": "database",
+          "title": "Database terpisah per bisnis",
+          "description": "Setiap bisnis menggunakan database tersendiri untuk menyimpan data operasional tokonya. Cabang dalam bisnis yang sama dapat dikelola dalam satu sistem."
+        },
+        {
+          "id": "subdomain",
+          "title": "Alamat akses khusus toko",
+          "description": "Akses aplikasi melalui subdomain yang disiapkan untuk bisnis Anda, sehingga tim memiliki alamat masuk khusus untuk operasional toko.",
+          "example": "namatoko.berkahemas.web.id"
+        },
+        {
+          "id": "domain",
+          "title": "Domain bisnis sendiri",
+          "description": "Ingin menggunakan domain toko Anda? Bahas kebutuhan, pengaturan domain, dan ketersediaannya bersama tim saat demo.",
+          "note": "Ketersediaan dikonfirmasi saat demo."
+        }
+      ],
+      "cta": "Bahas akses toko saat demo"
     }
   },
   "en": {
@@ -276,7 +311,8 @@
         "title": "Gold ERP Software",
         "desc": "Complete POS & inventory system"
       },
-      "contact": "Contact"
+      "contact": "Contact",
+      "storeAccess": "Data & Access"
     },
     "hero": {
       "badge": "For gold-store operations",
@@ -308,7 +344,7 @@
             "Category and location filters"
           ],
           "image": "/assets/screenshots/inventory.webp",
-          "url": "app.astaenterprise.id/inventori",
+          "url": "app.berkahemas.web.id/inventori",
           "imageBadge": "Demo data"
         },
         {
@@ -322,7 +358,7 @@
             "Invoice for the saved sale"
           ],
           "image": "/assets/screenshots/pos.webp",
-          "url": "app.astaenterprise.id/pos",
+          "url": "app.berkahemas.web.id/pos",
           "imageBadge": "Demo data"
         },
         {
@@ -336,7 +372,7 @@
             "Buyback history and status"
           ],
           "image": "/assets/screenshots/buyback.webp",
-          "url": "app.astaenterprise.id/buyback",
+          "url": "app.berkahemas.web.id/buyback",
           "imageBadge": "Demo data"
         },
         {
@@ -350,7 +386,7 @@
             "Printable reports"
           ],
           "image": "/assets/screenshots/reports.webp",
-          "url": "app.astaenterprise.id/laporan",
+          "url": "app.berkahemas.web.id/laporan",
           "imageBadge": "Demo data"
         }
       ]
@@ -390,28 +426,28 @@
           "title": "Gold Inventory",
           "desc": "Search and filter jewelry by name, category, purity, and location.",
           "image": "/assets/screenshots/inventory.webp",
-          "url": "app.astaenterprise.id/inventori",
+          "url": "app.berkahemas.web.id/inventori",
           "badge": "Demo data"
         },
         {
           "title": "Point of Sale",
           "desc": "Select products, review the total, and save a sale. View the invoice for the completed transaction.",
           "image": "/assets/screenshots/pos.webp",
-          "url": "app.astaenterprise.id/pos",
+          "url": "app.berkahemas.web.id/pos",
           "badge": "Demo data"
         },
         {
           "title": "Buyback",
           "desc": "Enter jewelry details and the buyback value, then save the record for review.",
           "image": "/assets/screenshots/buyback.webp",
-          "url": "app.astaenterprise.id/buyback",
+          "url": "app.berkahemas.web.id/buyback",
           "badge": "Demo data"
         },
         {
           "title": "Reports",
           "desc": "Open the report summary and use period filters to review store records.",
           "image": "/assets/screenshots/reports.webp",
-          "url": "app.astaenterprise.id/laporan",
+          "url": "app.berkahemas.web.id/laporan",
           "badge": "Demo data"
         }
       ]
@@ -490,16 +526,24 @@
         {
           "q": "Will it work with my existing devices?",
           "a": "Share the models of your scanner, printer and other devices. Confirm compatibility during the demo before choosing a plan."
+        },
+        {
+          "q": "Does each business have its own database?",
+          "a": "Yes. BerkahEmas provisions a separate database for each business. Branches within the same business can be managed in one system."
+        },
+        {
+          "q": "Can I use a dedicated subdomain or my own business domain?",
+          "a": "Your store uses a dedicated subdomain prepared for your business. For your own business domain, confirm availability and setup requirements with the team during a demo."
         }
       ]
     },
     "footer": {
       "brandDesc": "Gold-store software for inventory, POS, buyback and reporting.",
       "locations": "Jakarta & Surabaya, Indonesia",
-      "email": "hello@astaenterprise.id",
+      "email": "hello@berkahemas.web.id",
       "whatsapp": "+62 851-8300-3076 (WhatsApp Consultation)",
-      "instagram": "@astaenterprise.id",
-      "instagramUrl": "https://www.instagram.com/astaenterprise.id",
+      "instagram": "@berkahemas.web.id",
+      "instagramUrl": "https://www.instagram.com/berkahemas.web.id",
       "modulesTitle": "Product workflows",
       "ecosystemTitle": "Explore",
       "securityTitle": "See the workflow",
@@ -510,6 +554,32 @@
     "whatsapp": {
       "tooltip": "Request a BerkahEmas demo",
       "prefill": "Hello BerkahEmas, I would like a demo of the gold-store software."
+    },
+    "storeAccess": {
+      "eyebrow": "Store Data & Access",
+      "title": "An operational space for your store business.",
+      "subtitle": "A separate database and dedicated access address help each business use BerkahEmas for its store operations.",
+      "exampleLabel": "Example access address",
+      "items": [
+        {
+          "id": "database",
+          "title": "A separate database per business",
+          "description": "Each business uses its own database for operational records. Branches within the same business can be managed in one system."
+        },
+        {
+          "id": "subdomain",
+          "title": "Dedicated store access",
+          "description": "Open the application through a subdomain prepared for your business, giving your team a dedicated sign-in address for store operations.",
+          "example": "yourstore.berkahemas.web.id"
+        },
+        {
+          "id": "domain",
+          "title": "Your own business domain",
+          "description": "Want to use your store?s domain? Discuss your requirements, domain setup, and availability with the team during a demo.",
+          "note": "Availability confirmed during the demo."
+        }
+      ],
+      "cta": "Discuss store access during a demo"
     }
   }
 }

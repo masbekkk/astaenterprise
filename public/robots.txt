@@ -17,5 +17,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://astaenterprise.id/sitemap.xml
-Host: https://astaenterprise.id
+Sitemap: https://berkahemas.web.id/sitemap.xml
+Host: https://berkahemas.web.id

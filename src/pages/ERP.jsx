@@ -17,7 +17,7 @@ export default function ERPPage() {
       <SEO
         title="Solusi ERP Bisnis Toko Emas & Berlian Enterprise - AstaEnterprise"
         description="Sistem ERP khusus bisnis emas. Modul POS retail, inventaris kadar & gramasi, buyback, transfer multi-cabang, dan laporan keuangan terintegrasi."
-        canonical="https://astaenterprise.id/"
+        canonical="https://berkahemas.web.id/"
         keywords="erp emas, software toko emas, aplikasi kasir emas, pos retail emas, manajemen gadai emas, inventory emas, gold erp, gold shop software"
       />
       {/* Hero */}
@@ -58,7 +58,7 @@ export default function ERPPage() {
               <BrowserMockup
                 src="/assets/screenshots/dashboard.webp"
                 alt="Dashboard ERP AstaEnterprise"
-                url="app.astaenterprise.id/dashboard"
+                url="app.berkahemas.web.id/dashboard"
                 badge="Live ERP"
               />
             </div>

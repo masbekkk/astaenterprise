@@ -12,7 +12,7 @@ export default function About() {
       <SEO
         title={lang === "id" ? "Tentang Kami — Visi & Misi AstaEnterprise" : "About Us — Vision & Mission of AstaEnterprise"}
         description={lang === "id" ? "Kenali AstaEnterprise, pelopor digitalisasi dan modernisasi ekosistem industri bisnis emas di Indonesia." : "Get to know AstaEnterprise, the pioneer in digitizing and modernizing the gold business industry ecosystem in Indonesia."}
-        canonical="https://astaenterprise.id/about"
+        canonical="https://berkahemas.web.id/about"
         keywords="profil asta enterprise, pendiri asta emas, visi misi asta enterprise, tentang asta enterprise, asta enterprise profile"
       />
       <section className="border-b border-border" data-testid="about-hero">

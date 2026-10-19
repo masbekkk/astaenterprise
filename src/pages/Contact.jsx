@@ -25,8 +25,8 @@ export default function Contact() {
     {
       icon: Instagram,
       label: "Instagram",
-      value: "@astaenterprise.id",
-      href: "https://www.instagram.com/astaenterprise.id",
+      value: "@berkahemas.web.id",
+      href: "https://www.instagram.com/berkahemas.web.id",
       testid: "contact-channel-instagram",
     },
     {
@@ -43,7 +43,7 @@ export default function Contact() {
       <SEO
         title={lang === "id" ? "Hubungi Kami — Layanan Kemitraan AstaEnterprise" : "Contact Us — Partner Services of AstaEnterprise"}
         description={lang === "id" ? "Konsultasikan kebutuhan sistem ERP atau kemitraan bisnis emas Anda dengan tim ahli kami di AstaEnterprise." : "Consult your gold business ERP needs or partnership inquiries with our expert team at AstaEnterprise."}
-        canonical="https://astaenterprise.id/contact"
+        canonical="https://berkahemas.web.id/contact"
         keywords="kontak asta enterprise, alamat asta emas, kemitraan bisnis emas, call center asta enterprise, contact asta enterprise"
       />
       <section className="border-b border-border" data-testid="contact-hero">

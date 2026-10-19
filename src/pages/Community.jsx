@@ -26,7 +26,7 @@ export default function Community() {
       <SEO
         title={lang === "id" ? "Komunitas Bisnis Emas Indonesia - AstaEnterprise" : "Indonesia Gold Business Community - AstaEnterprise"}
         description={lang === "id" ? "Bergabunglah dengan jaringan pengusaha, penaksir, dan peminat industri emas terbesar untuk berkolaborasi, belajar, dan tumbuh bersama." : "Join the largest network of gold industry entrepreneurs, appraisers, and enthusiasts to collaborate, learn, and grow together."}
-        canonical="https://astaenterprise.id/community"
+        canonical="https://berkahemas.web.id/community"
         keywords="komunitas emas indonesia, asosiasi bisnis emas, jaringan toko emas, forum emas asta enterprise, gold community indonesia, gold business network"
       />
       <section className="border-b border-border" data-testid="community-hero">

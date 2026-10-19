@@ -12,7 +12,7 @@ function testSeoFiles() {
     errors++;
   } else {
     const robots = fs.readFileSync(robotsPath, 'utf-8');
-    if (!robots.includes('https://astaenterprise.id/sitemap.xml')) {
+    if (!robots.includes('https://berkahemas.web.id/sitemap.xml')) {
       console.error('❌ Sitemap missing in robots.txt');
       errors++;
     } else {
@@ -27,7 +27,7 @@ function testSeoFiles() {
     errors++;
   } else {
     const sitemap = fs.readFileSync(sitemapPath, 'utf-8');
-    if (!sitemap.includes('https://astaenterprise.id/') || !sitemap.includes('https://astaenterprise.id/en')) {
+    if (!sitemap.includes('https://berkahemas.web.id/') || !sitemap.includes('https://berkahemas.web.id/en')) {
       console.error('❌ Sitemap missing required URLs');
       errors++;
     } else {

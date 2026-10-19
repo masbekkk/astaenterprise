@@ -11,6 +11,8 @@ import {
   FileBarChart,
   Users,
   Building2,
+  Database,
+  Globe,
   Coins,
   ScanBarcode,
   Lock,
@@ -123,7 +125,7 @@ export default function Home() {
     icon: galleryIcons[idx % galleryIcons.length],
   }));
 
-  const canonicalUrl = lang === "en" ? "https://astaenterprise.id/en" : "https://astaenterprise.id/";
+  const canonicalUrl = lang === "en" ? "https://berkahemas.web.id/en" : "https://berkahemas.web.id/";
 
   return (
     <div className="bg-[#F8F6EF] text-zinc-900 min-h-screen selection:bg-brand-500/20 selection:text-brand-900 relative overflow-hidden">
@@ -227,7 +229,7 @@ export default function Home() {
               <BrowserMockup
                 src="/assets/screenshots/dashboard.webp"
                 alt="Dashboard Eksekutif Sistem ERP & POS Toko Emas BerkahEmas"
-                url="app.astaenterprise.id/dashboard"
+                url="app.berkahemas.web.id/dashboard"
                 badge={t.gallery?.liveBadge || "Data demo"}
                 priority={true}
               />
@@ -238,7 +240,7 @@ export default function Home() {
               <BrowserMockup
                 src="/assets/screenshots/gold-price.webp"
                 alt="Pengaturan harga emas BerkahEmas"
-                url="app.astaenterprise.id/harga-emas"
+                url="app.berkahemas.web.id/harga-emas"
                 badge={lang === "en" ? "Demo data" : "Data demo"}
               />
             </div>
@@ -248,7 +250,7 @@ export default function Home() {
               <BrowserMockup
                 src="/assets/screenshots/pos.webp"
                 alt="POS kasir BerkahEmas"
-                url="app.astaenterprise.id/pos"
+                url="app.berkahemas.web.id/pos"
                 badge={lang === "en" ? "Demo data" : "Data demo"}
               />
             </div>
@@ -359,6 +361,33 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </section>
+      )}
+
+      {t.storeAccess && (
+        <section id="store-access" aria-labelledby="store-access-title" className="scroll-mt-24 border-b border-brand-200 bg-brand-50/50 py-20 md:py-24">
+          <div className="mx-auto max-w-7xl px-6 md:px-10">
+            <div className="mb-10 max-w-2xl space-y-3">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand-700">{t.storeAccess.eyebrow}</p>
+              <h2 id="store-access-title" className="text-3xl font-extrabold tracking-tight text-zinc-950 sm:text-4xl">{t.storeAccess.title}</h2>
+              <p className="text-base leading-relaxed text-zinc-600">{t.storeAccess.subtitle}</p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {t.storeAccess.items.map((item) => {
+                const AccessIcon = { database: Database, subdomain: Globe, domain: Building2 }[item.id];
+                return (
+                  <article key={item.id} className="flex min-w-0 flex-col rounded-2xl border border-brand-200 bg-white p-7">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700"><AccessIcon className="h-6 w-6" aria-hidden="true" /></div>
+                    <h3 className="text-lg font-bold text-zinc-900">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-600">{item.description}</p>
+                    {item.example && <div className="mt-5 rounded-xl border border-brand-200 bg-brand-50 p-3"><p className="mb-1 text-xs text-zinc-600">{t.storeAccess.exampleLabel}</p><code className="break-all text-sm font-semibold text-brand-800">{item.example}</code></div>}
+                    {item.note && <p className="mt-5 text-xs font-semibold text-brand-700">{item.note}</p>}
+                  </article>
+                );
+              })}
+            </div>
+            <a href="#demo" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-brand-700 underline decoration-brand-300 underline-offset-4 hover:text-brand-800">{t.storeAccess.cta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
           </div>
         </section>
       )}

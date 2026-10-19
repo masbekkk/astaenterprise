@@ -9,7 +9,7 @@
 
 const https = require('https');
 
-const HOST = 'astaenterprise.id';
+const HOST = 'berkahemas.web.id';
 const KEY = 'c4a9b8f2d1e04753a8123efb092147ac';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
