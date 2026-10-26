@@ -11,7 +11,7 @@ export default function Navbar() {
   const { pathname } = useLocation();
   useEffect(() => setOpen(false), [pathname]);
   const links = [['features', t.nav.features], ['store-access', t.nav.storeAccess], ['how-it-works', t.nav.howItWorks], ['gallery', t.nav.gallery], ['pricing', t.nav.pricing], ['faq', t.nav.faq]];
-  return <header data-testid="site-navbar" className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-xl">
+  return <header data-testid="site-navbar" className="font-sans sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-xl">
     <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-6 md:px-10">
       <Logo />
       <nav className="hidden items-center gap-5 xl:flex" aria-label={lang === 'en' ? 'Main navigation' : 'Navigasi utama'}>

@@ -211,7 +211,7 @@ export default function Home() {
                     <span className="inline-block px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200">
                       {feat.badge}
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-zinc-950 leading-tight">
+                    <h3 className="font-editorial text-2xl sm:text-3xl text-zinc-950 leading-tight">
                       {feat.title}
                     </h3>
                     <p className="text-zinc-600 text-base leading-relaxed">
@@ -319,7 +319,7 @@ export default function Home() {
                   <span className="inline-block px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-100 text-brand-800 border border-brand-200">
                     {galleryModules[activeTab].badge}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-zinc-950">
+                  <h3 className="font-editorial text-2xl sm:text-3xl text-zinc-950">
                     {galleryModules[activeTab].title}
                   </h3>
                   <p className="text-zinc-600 text-base leading-relaxed">
@@ -474,7 +474,7 @@ export default function Home() {
                 <span className="inline-block px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-200/80 text-brand-900">
                   {t.pricing.banner.badge}
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-zinc-950">
+                <h3 className="font-editorial text-2xl sm:text-3xl text-zinc-950">
                   {t.pricing.banner.title}
                 </h3>
                 <p className="text-zinc-600 text-sm sm:text-base max-w-2xl mx-auto">

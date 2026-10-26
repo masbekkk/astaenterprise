@@ -3,7 +3,7 @@ import { MessageCircle, X } from "lucide-react";
 import { useApp } from "@/context/AppContext";
 
 export default function WhatsAppButton({
-  phoneNumber = "6285183003076",
+  phoneNumber = "6287777809578",
 }) {
   const [showTooltip, setShowTooltip] = useState(true);
   const { t, lang } = useApp();

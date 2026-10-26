@@ -40,7 +40,7 @@ export default function GoldPriceReference() {
   const date = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'id-ID', { timeZone: 'Asia/Jakarta', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
   const weight = new Intl.NumberFormat(lang === 'en' ? 'en-US' : 'id-ID', { maximumFractionDigits: 3 });
   const retail = state.records.filter(record => record.priceType === 'retail');
-  return <section id="gold-reference" aria-labelledby="gold-reference-title" className="gold-reference">
+  return <section id="gold-reference" aria-labelledby="gold-reference-title" className="gold-reference font-sans">
     <div className="mx-auto max-w-7xl px-6 md:px-10">
       <div className="gold-reference-panel">
         <div className="space-y-3">
