@@ -33,7 +33,10 @@
         "POS Kasir",
         "Buyback",
         "Laporan"
-      ]
+      ],
+      "editorialStart": "Emas bernilai. ",
+      "editorialHighlight": "Usaha tertata.",
+      "productCaption": "Inventori, POS kasir, buyback, dan laporan. Satu pandangan untuk operasional harian Anda."
     },
     "painPoints": null,
     "features": {
@@ -290,6 +293,28 @@
         }
       ],
       "cta": "Bahas akses toko saat demo"
+    },
+    "goldReference": {
+      "eyebrow": "Referensi pasar",
+      "title": "Harga Emas Hari Ini",
+      "description": "Referensi harga emas Indonesia, lengkap dengan sumber dan waktu publikasinya.",
+      "retail": "ANTAM · harga jual 1 gram",
+      "buyback": "ANTAM · buyback per gram",
+      "loading": "Memeriksa publikasi harga…",
+      "available": "Referensi publikasi terbaru",
+      "stale": "Referensi terakhir tersedia · pembaruan belum terkonfirmasi",
+      "unavailable": "Data harga belum tersedia",
+      "sourceLink": "Lihat referensi resmi ANTAM",
+      "note": "Sebagai informasi referensi. Bukan harga jual toko Anda atau harga spot dunia. Ketentuan pajak dan transaksi mengikuti sumber. BerkahEmas tidak berafiliasi dengan ANTAM.",
+      "detailsTitle": "Lihat detail harga & pecahan emas",
+      "detailsDescription": "Harga publikasi per keping emas batangan ANTAM, berdasarkan berat dan butik yang dicantumkan sumber. Harga buyback pada ringkasan adalah per gram. Ketentuan pajak ditampilkan hanya bila tersedia dari sumber.",
+      "tableCaption": "Detail referensi harga emas batangan ANTAM",
+      "weight": "Berat / butik",
+      "publishedPrice": "Harga publikasi / keping",
+      "taxPrice": "Harga termasuk pajak",
+      "sourceAndTime": "Sumber & waktu publikasi",
+      "notPublished": "Tidak dicantumkan sumber",
+      "detailsUnavailable": "Lihat daftar pecahan dan harga terbaru melalui halaman resmi ANTAM di bawah ini."
     }
   },
   "en": {
@@ -326,7 +351,10 @@
         "POS",
         "Buyback",
         "Reports"
-      ]
+      ],
+      "editorialStart": "The craft of gold. ",
+      "editorialHighlight": "The clarity of your business.",
+      "productCaption": "Inventory, POS, buyback and reporting. One view of your daily operations."
     },
     "painPoints": null,
     "features": {
@@ -580,6 +608,28 @@
         }
       ],
       "cta": "Discuss store access during a demo"
+    },
+    "goldReference": {
+      "eyebrow": "Market reference",
+      "title": "Gold prices today",
+      "description": "Published Indonesian gold prices, with their original source and update time.",
+      "retail": "ANTAM · 1 gram retail",
+      "buyback": "ANTAM · buyback per gram",
+      "loading": "Checking published prices…",
+      "available": "Latest published reference",
+      "stale": "Last available reference · update not confirmed",
+      "unavailable": "Price data is not available yet",
+      "sourceLink": "View the official ANTAM reference",
+      "note": "Reference information only. These are not your store’s selling prices or global spot prices. Refer to the source for applicable taxes and terms. BerkahEmas is independent of ANTAM.",
+      "detailsTitle": "View gold prices & denominations",
+      "detailsDescription": "Published ANTAM gold-bar prices per piece, for the weight and boutique specified by the source. The buyback summary is per gram. Tax details appear only when supplied by the source.",
+      "tableCaption": "Detailed ANTAM gold-bar price references",
+      "weight": "Weight / boutique",
+      "publishedPrice": "Published price / piece",
+      "taxPrice": "Price including tax",
+      "sourceAndTime": "Source & publication time",
+      "notPublished": "Not provided by source",
+      "detailsUnavailable": "See available denominations and current prices on the official ANTAM page below."
     }
   }
 }

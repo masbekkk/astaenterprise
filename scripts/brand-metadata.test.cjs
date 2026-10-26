@@ -12,7 +12,8 @@ for (const lang of ['id', 'en']) {
   assert.match(html, new RegExp(`<html lang="${lang}">`));
   assert.ok(html.includes(content[lang].meta.title));
   assert.ok(html.includes(`${BRAND.baseUrl}${lang === 'en' ? '/en' : '/'}`));
-  assert.ok(!/aggregateRating|ratingCount|priceValidUntil|ISO|256-bit|200\+|1.second|#1/i.test(html));
+  assert.ok(!/aggregateRating|ratingCount|priceValidUntil|ISO|256-bit|200\+|1.second|#1\b/i.test(html));
+  assert.ok(html.includes('content="#102D50"'));
   assert.equal(processTemplate(html, lang), html);
 }
 console.log('PASS: bilingual metadata, schema parity, canonical uniqueness, unsupported-claim removal.');

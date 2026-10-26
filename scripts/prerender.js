@@ -10,7 +10,7 @@ function processTemplate(template, lang) {
   const graph = JSON.stringify(buildGraph(lang, faq.items)).replaceAll('<', '\u003c');
   const metadata = [
     ['name', 'title', meta.title], ['name', 'description', meta.description], ['name', 'keywords', meta.keywords],
-    ['name', 'author', BRAND.name], ['name', 'publisher', BRAND.name], ['name', 'theme-color', '#075E46'],
+    ['name', 'author', BRAND.name], ['name', 'publisher', BRAND.name], ['name', 'theme-color', '#102D50'],
     ['property', 'og:title', meta.title], ['property', 'og:description', meta.description], ['property', 'og:url', url],
     ['property', 'og:site_name', BRAND.name], ['property', 'og:type', 'website'],
     ['property', 'og:image', `${BRAND.baseUrl}/og-image.png`], ['property', 'og:image:width', '1200'], ['property', 'og:image:height', '630'],

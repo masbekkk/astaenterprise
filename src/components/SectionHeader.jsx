@@ -20,7 +20,7 @@ export default function SectionHeader({ eyebrow, title, sub, align = "left", cla
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="font-sans text-3xl md:text-4xl lg:text-5xl tracking-[-0.025em] leading-[1.05] mt-4 text-balance font-medium"
+        className="font-editorial text-3xl md:text-4xl lg:text-5xl tracking-[-0.025em] leading-[1.05] mt-4 text-balance font-normal"
       >
         {title}
       </motion.h2>

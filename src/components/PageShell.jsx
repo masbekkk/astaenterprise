@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CursorFollower from "@/components/CursorFollower";
 
 export default function PageShell({ children }) {
   const { pathname } = useLocation();
@@ -12,11 +13,11 @@ export default function PageShell({ children }) {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground relative">
+    <MotionConfig reducedMotion="user"><div className="min-h-screen flex flex-col bg-background text-foreground relative">
       <Navbar />
       <motion.main
         key={pathname}
-        initial={{ opacity: 0, y: 8 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
         className="flex-1"
@@ -25,6 +26,7 @@ export default function PageShell({ children }) {
       </motion.main>
       <Footer />
       <WhatsAppButton />
-    </div>
+      <CursorFollower />
+    </div></MotionConfig>
   );
 }

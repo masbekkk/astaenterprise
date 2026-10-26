@@ -8,17 +8,17 @@ export default function BrowserMockup({
   url = "app.berkahemas.web.id/dashboard",
   badge = "Data demo",
   className = "",
-  glow = true,
+  glow = false,
   children,
   aspectRatio = "aspect-[16/10]",
   priority = false,
 }) {
   return (
     <div
-      className={`relative group rounded-2xl p-1 transition-all duration-500 ${
+      className={`relative group rounded-xl p-1 transition-all duration-500 ${
         glow
-          ? "bg-gradient-to-b from-brand-300/40 via-brand-100/30 to-transparent shadow-[0_20px_60px_-15px_rgba(7,94,70,0.18)]"
-          : "bg-gradient-to-b from-zinc-200/80 to-zinc-100/50 shadow-lg shadow-black/[0.04]"
+          ? "bg-gradient-to-b from-brand-300/40 via-brand-100/30 to-transparent shadow-[0_20px_60px_-15px_rgba(16,45,80,0.18)]"
+          : "bg-gradient-to-b from-zinc-200/80 to-zinc-100/50 shadow-sm shadow-black/[0.04]"
       } ${className}`}
     >
       {/* Outer ambient soft color wash */}
@@ -30,18 +30,18 @@ export default function BrowserMockup({
       )}
 
       {/* Main browser container */}
-      <div className="rounded-xl overflow-hidden border border-zinc-200/90 bg-white shadow-2xl flex flex-col">
+      <div className="rounded-xl overflow-hidden border border-zinc-200/90 bg-surface shadow-sm flex flex-col">
         {/* Browser Top Bar */}
         <div className="flex items-center justify-between px-3 md:px-4 py-2.5 bg-zinc-100/90 border-b border-zinc-200/80 select-none">
           {/* Traffic Lights */}
           <div className="flex items-center gap-1.5 md:gap-2">
-            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-[#FF5F56] border border-[#E0443E]/80 inline-block" />
-            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-[#FFBD2E] border border-[#DEA123]/80 inline-block" />
-            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-[#27C93F] border border-[#1AAB29]/80 inline-block" />
+            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-brand-500 inline-block" />
+            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-gold inline-block" />
+            <span className="h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-brand-300 inline-block" />
           </div>
 
           {/* Address / URL Bar */}
-          <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-white border border-zinc-200 text-[11px] md:text-xs text-zinc-600 max-w-[200px] sm:max-w-xs md:max-w-md truncate font-mono shadow-sm">
+          <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-surface border border-zinc-200 text-[11px] md:text-xs text-zinc-600 max-w-[200px] sm:max-w-xs md:max-w-md truncate font-mono shadow-sm">
             <Lock className="h-3 w-3 text-brand-600 shrink-0" />
             <span className="text-zinc-700 truncate">{url}</span>
           </div>
@@ -50,7 +50,7 @@ export default function BrowserMockup({
           <div className="flex items-center gap-2">
             {badge && (
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-brand-50 text-brand-700 border border-brand-200 shadow-sm">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="h-1.5 w-1.5 rounded-full bg-gold" />
                 {badge}
               </span>
             )}

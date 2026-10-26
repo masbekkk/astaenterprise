@@ -50,7 +50,7 @@ export default function LanguageSwitcher({ className = "" }) {
   return (
     <div
       data-testid="language-switcher"
-      className={`relative inline-flex items-center p-1 rounded-full bg-white/95 border border-zinc-200/90 shadow-sm shadow-brand-900/[0.04] backdrop-blur-sm select-none ${className}`}
+      className={`relative inline-flex items-center p-1 rounded-lg bg-white/95 border border-zinc-200/90 shadow-sm shadow-brand-900/[0.04] backdrop-blur-sm select-none ${className}`}
       role="group"
       aria-label="Pilih Bahasa / Select Language"
     >
@@ -62,7 +62,7 @@ export default function LanguageSwitcher({ className = "" }) {
             type="button"
             onClick={() => handleLanguageSelect(opt.code)}
             aria-pressed={isActive}
-            className={`relative min-h-[36px] min-w-[38px] px-3.5 py-1.5 text-xs font-bold transition-colors duration-200 rounded-full z-10 flex items-center justify-center ${
+            className={`relative min-h-[36px] min-w-[38px] px-3.5 py-1.5 text-xs font-bold transition-colors duration-200 rounded-lg z-10 flex items-center justify-center ${
               isActive ? "text-white" : "text-zinc-700 hover:text-zinc-950"
             }`}
           >
@@ -70,7 +70,7 @@ export default function LanguageSwitcher({ className = "" }) {
             {isActive && (
               <motion.div
                 layoutId="activeLangPill"
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-brand-500 to-brand-600 shadow-md shadow-brand-500/25 -z-10"
+                className="absolute inset-0 rounded-lg bg-primary -z-10"
                 transition={{ type: "spring", stiffness: 450, damping: 32 }}
               />
             )}

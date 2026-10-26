@@ -27,6 +27,7 @@ jobs:
             REACT_APP_SPREADSHEET_URL: ${{ secrets.REACT_APP_SPREADSHEET_URL }}
             REACT_APP_WORDPRESS_API_URL: ${{ secrets.REACT_APP_WORDPRESS_API_URL }}
             REACT_APP_BACKEND_URL: ${{ secrets.REACT_APP_BACKEND_URL }}
+            REACT_APP_GOLD_PRICE_URL: ${{ vars.REACT_APP_GOLD_PRICE_URL }}
 
       - name: Commit and push to build branch
         run: |
