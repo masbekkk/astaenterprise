@@ -75,8 +75,8 @@ export default function ContactForm() {
           <h3 className="font-serif text-2xl tracking-tight">{t.common.thanks}</h3>
           <p className="mt-2 text-sm text-muted-foreground">
             {lang === "id"
-              ? "Tim AstaEnterprise akan membalas dalam dua hari kerja."
-              : "The AstaEnterprise team will respond within two business days."}
+              ? "Tim BerkahEmas akan membalas secepatnya."
+              : "The BerkahEmas team will respond within ASAP."}
           </p>
         </div>
       </div>
@@ -162,8 +162,8 @@ export default function ContactForm() {
       <div className="mt-8 flex items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
           {lang === "id"
-            ? "Dengan mengirim, Anda setuju dihubungi oleh tim AstaEnterprise."
-            : "By submitting, you agree to be contacted by the AstaEnterprise team."}
+            ? "Dengan mengirim, Anda setuju dihubungi oleh tim BerkahEmas."
+            : "By submitting, you agree to be contacted by the BerkahEmas team."}
         </p>
         <Button
           type="submit"

@@ -24,10 +24,10 @@ export default function Community() {
   return (
     <div data-testid="community-page">
       <SEO
-        title={lang === "id" ? "Komunitas Bisnis Emas Indonesia - AstaEnterprise" : "Indonesia Gold Business Community - AstaEnterprise"}
+        title={lang === "id" ? "Komunitas Bisnis Emas Indonesia - BerkahEmas" : "Indonesia Gold Business Community - BerkahEmas"}
         description={lang === "id" ? "Bergabunglah dengan jaringan pengusaha, penaksir, dan peminat industri emas terbesar untuk berkolaborasi, belajar, dan tumbuh bersama." : "Join the largest network of gold industry entrepreneurs, appraisers, and enthusiasts to collaborate, learn, and grow together."}
         canonical="https://berkahemas.web.id/community"
-        keywords="komunitas emas indonesia, asosiasi bisnis emas, jaringan toko emas, forum emas asta enterprise, gold community indonesia, gold business network"
+        keywords="komunitas emas indonesia, asosiasi bisnis emas, jaringan toko emas, forum emas berkahemas, gold community indonesia, gold business network"
       />
       <section className="border-b border-border" data-testid="community-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">

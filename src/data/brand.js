@@ -1,6 +1,6 @@
 const BRAND = Object.freeze({
   name: 'BerkahEmas', descriptor: 'Software Toko Emas', version: '1.0.0',
-  baseUrl: 'https://berkahemas.web.id', whatsapp: '6287777809578',
+  baseUrl: 'https://berkahemas.web.id', platformUrl: 'https://app.berkahemas.web.id', whatsapp: '6287777809578',
 });
 
 function buildGraph(lang, faqItems = []) {

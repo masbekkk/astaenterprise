@@ -85,7 +85,7 @@ export default function MediaPage() {
           return;
         }
 
-        // Map and filter articles targeting Asta Enterprise
+        // Map and filter articles targeting BerkahEmas
         const mapped = nodes
           .filter((post) =>
             post.enterprisePlatforms?.nodes?.some(
@@ -153,10 +153,10 @@ export default function MediaPage() {
   return (
     <div data-testid="media-page">
       <SEO
-        title={lang === "id" ? "Media & Edukasi Emas - AstaEnterprise" : "Media & Gold Education - AstaEnterprise"}
-        description={lang === "id" ? "Wawasan industri ritel emas, update harga, taksiran, teknologi, dan tips bisnis dari tim ahli AstaEnterprise." : "Insights into the gold retail industry, price updates, appraisals, technology, and business tips from AstaEnterprise."}
+        title={lang === "id" ? "Media & Edukasi Emas - BerkahEmas" : "Media & Gold Education - BerkahEmas"}
+        description={lang === "id" ? "Wawasan industri ritel emas, update harga, taksiran, teknologi, dan tips bisnis dari tim ahli BerkahEmas." : "Insights into the gold retail industry, price updates, appraisals, technology, and business tips from BerkahEmas."}
         canonical="https://berkahemas.web.id/media"
-        keywords="berita emas, edukasi emas, harga emas hari ini, tips bisnis emas, berita asta enterprise, gold news, gold education, gold price today"
+        keywords="berita emas, edukasi emas, harga emas hari ini, tips bisnis emas, berita berkahemas, gold news, gold education, gold price today"
       />
       <section className="border-b border-border" data-testid="media-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">

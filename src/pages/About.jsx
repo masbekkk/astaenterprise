@@ -10,10 +10,10 @@ export default function About() {
   return (
     <div data-testid="about-page">
       <SEO
-        title={lang === "id" ? "Tentang Kami — Visi & Misi AstaEnterprise" : "About Us — Vision & Mission of AstaEnterprise"}
-        description={lang === "id" ? "Kenali AstaEnterprise, pelopor digitalisasi dan modernisasi ekosistem industri bisnis emas di Indonesia." : "Get to know AstaEnterprise, the pioneer in digitizing and modernizing the gold business industry ecosystem in Indonesia."}
+        title={lang === "id" ? "Tentang Kami — Visi & Misi BerkahEmas" : "About Us — Vision & Mission of BerkahEmas"}
+        description={lang === "id" ? "Kenali BerkahEmas, pelopor digitalisasi dan modernisasi ekosistem industri bisnis emas di Indonesia." : "Get to know BerkahEmas, the pioneer in digitizing and modernizing the gold business industry ecosystem in Indonesia."}
         canonical="https://berkahemas.web.id/about"
-        keywords="profil asta enterprise, pendiri asta emas, visi misi asta enterprise, tentang asta enterprise, asta enterprise profile"
+        keywords="profil berkahemas, pendiri asta emas, visi misi berkahemas, tentang berkahemas, berkahemas profile"
       />
       <section className="border-b border-border" data-testid="about-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">

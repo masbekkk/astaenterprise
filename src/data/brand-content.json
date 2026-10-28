@@ -2,7 +2,7 @@
   "id": {
     "meta": {
       "title": "BerkahEmas — Software Toko Emas",
-      "description": "Software toko emas untuk inventori, POS kasir, buyback, dan laporan. Kenali alurnya dan minta demo BerkahEmas.",
+      "description": "Software toko emas untuk inventori, POS kasir, buyback, dan laporan. Coba BerkahEmas gratis 3 hari atau beli paket melalui WhatsApp.",
       "keywords": "software toko emas, aplikasi kasir emas, inventori emas, buyback, BerkahEmas"
     },
     "nav": {
@@ -13,7 +13,7 @@
       "faq": "FAQ",
       "ecosystem": "Produk",
       "whatsapp": "WhatsApp",
-      "requestDemo": "Minta Demo",
+      "requestDemo": "Coba Gratis",
       "erp": {
         "title": "ERP Software Emas",
         "desc": "Sistem POS & inventori lengkap"
@@ -26,7 +26,7 @@
       "titleStart": "BerkahEmas — ",
       "titleHighlight": "Software Toko Emas",
       "subheadline": "Inventori, POS kasir, buyback, dan laporan dalam satu aplikasi. Kenali alur BerkahEmas untuk operasional harian toko Anda.",
-      "ctaPrimary": "Minta Demo BerkahEmas",
+      "ctaPrimary": "Coba Gratis 3 Hari",
       "ctaSecondary": "Lihat Fitur",
       "highlights": [
         "Inventori",
@@ -102,28 +102,28 @@
       ]
     },
     "howItWorks": {
-      "title": "Mulai dari demo produk",
-      "subtitle": "Bahas alur toko Anda sebelum memilih paket.",
+      "title": "Dari pendaftaran ke ruang kerja toko",
+      "subtitle": "Daftar singkat, lalu lengkapi rincian toko saat Anda siap.",
       "steps": [
         {
           "num": "01",
-          "title": "Minta demo",
-          "desc": "Ceritakan toko dan pekerjaan yang ingin Anda tinjau."
+          "title": "Daftar trial",
+          "desc": "Isi nama toko dan email. Paket Trial dipilih otomatis untuk Anda."
         },
         {
           "num": "02",
-          "title": "Lihat alurnya",
-          "desc": "Kenali inventori, POS, buyback, dan laporan saat demo."
+          "title": "Verifikasi email",
+          "desc": "Buka tautan dari email, lalu tentukan nama dan password Anda."
         },
         {
           "num": "03",
-          "title": "Bahas kebutuhan toko",
-          "desc": "Tinjau pengguna, cabang, persiapan data, dan perangkat yang diperlukan."
+          "title": "Coba ERP Anda",
+          "desc": "Kami menyiapkan ruang kerja khusus Anda. Masa trial tiga hari dimulai setelah toko siap."
         },
         {
           "num": "04",
-          "title": "Pilih paket",
-          "desc": "Konfirmasikan penawaran dan langkah berikutnya dengan tim."
+          "title": "Pilih paket berlangganan",
+          "desc": "Hubungi kami melalui WhatsApp untuk membeli paket dan melanjutkan dengan toko yang sama."
         }
       ]
     },
@@ -165,7 +165,7 @@
     "testimonials": null,
     "pricing": {
       "title": "Pilihan Paket Sesuai Skala Toko Emas",
-      "subtitle": "Konfirmasikan harga terbaru, fitur paket, dan kebutuhan persiapan dengan tim.",
+      "subtitle": "Coba fitur Starter gratis 3 hari. Beli paket berlangganan melalui WhatsApp saat Anda siap.",
       "periodMonth": "/ bulan",
       "popularBadge": "Pilihan Paket",
       "tiers": [
@@ -184,7 +184,7 @@
             "Cetak Label Barcode & Surat Emas",
             "Laporan Penjualan Harian"
           ],
-          "ctaText": "Minta Demo",
+          "ctaText": "Beli Starter",
           "badge": null
         },
         {
@@ -203,7 +203,7 @@
             "Transfer Stok Antar Cabang",
             "Migrasi Data Excel Dibantu Tim Ahli"
           ],
-          "ctaText": "Minta Demo"
+          "ctaText": "Beli Professional"
         },
         {
           "name": "Enterprise",
@@ -214,14 +214,14 @@
           "features": [
             "Pelatihan Staf Onsite di Toko"
           ],
-          "ctaText": "Minta Demo",
+          "ctaText": "Beli Enterprise",
           "badge": null
         }
       ],
       "banner": null
     },
     "faq": {
-      "title": "Pertanyaan sebelum demo",
+      "title": "Pertanyaan sebelum mulai",
       "subtitle": "Mulai dari alur yang dibutuhkan toko Anda.",
       "items": [
         {
@@ -229,8 +229,8 @@
           "a": "BerkahEmas adalah software toko emas dengan alur inventori, POS kasir, buyback, dan laporan."
         },
         {
-          "q": "Bisa melihat aplikasinya sebelum memilih paket?",
-          "a": "Minta demo melalui WhatsApp dan sampaikan alur yang ingin Anda tinjau bersama tim."
+          "q": "Bisa mencoba ERP sebelum berlangganan?",
+          "a": "Bisa. Pilih Coba Gratis, isi nama toko dan email, verifikasi email, lalu buat password. Paket Trial memiliki fitur dan batas pemakaian Starter selama 3 hari setelah toko siap, tanpa kartu kredit."
         },
         {
           "q": "Bisa menggunakan identitas toko pada nota?",
@@ -247,6 +247,10 @@
         {
           "q": "Bisa menggunakan subdomain atau domain bisnis sendiri?",
           "a": "Akses toko menggunakan subdomain khusus yang disiapkan untuk bisnis Anda. Untuk domain bisnis sendiri, konfirmasikan ketersediaan dan kebutuhan pengaturannya bersama tim saat demo."
+        },
+        {
+          "q": "Bagaimana membeli paket setelah trial?",
+          "a": "Pilih paket di bagian Harga untuk membuka WhatsApp dengan nama paket yang dipilih. Tim kami akan membantu pembayaran dan aktivasi agar Anda dapat melanjutkan dengan toko yang sama."
         }
       ]
     },
@@ -265,8 +269,8 @@
       "contactSupport": "Hubungi Support"
     },
     "whatsapp": {
-      "tooltip": "Minta demo BerkahEmas",
-      "prefill": "Halo BerkahEmas, saya ingin meminta demo Software Toko Emas."
+      "tooltip": "Konsultasi paket melalui WhatsApp",
+      "prefill": "Halo BerkahEmas, saya ingin berkonsultasi tentang paket untuk toko emas saya."
     },
     "storeAccess": {
       "eyebrow": "Data & Akses Toko",
@@ -292,7 +296,7 @@
           "note": "Ketersediaan dikonfirmasi saat demo."
         }
       ],
-      "cta": "Bahas akses toko saat demo"
+      "cta": "Coba ruang kerja toko Anda"
     },
     "goldReference": {
       "eyebrow": "Referensi pasar",
@@ -315,12 +319,26 @@
       "sourceAndTime": "Sumber & waktu publikasi",
       "notPublished": "Tidak dicantumkan sumber",
       "detailsUnavailable": "Lihat daftar pecahan dan harga terbaru melalui halaman resmi ANTAM di bawah ini."
+    },
+    "trial": {
+      "badge": "Trial · Gratis 3 hari",
+      "title": "Mulai dengan paket Trial gratis",
+      "description": "Coba fitur dan batas pemakaian yang sama dengan Starter di ruang kerja khusus toko Anda. Verifikasi email, buat password, lalu mulai mencoba ERP.",
+      "highlights": [
+        "1 cabang toko",
+        "Hingga 3 pengguna",
+        "Penyimpanan 1 GB"
+      ],
+      "cta": "Coba Gratis 3 Hari",
+      "note": "Tanpa kartu kredit. Masa 3 hari dimulai setelah toko siap.",
+      "finalTitle": "Coba langsung di ruang kerja toko Anda.",
+      "salesCta": "Beli paket melalui WhatsApp"
     }
   },
   "en": {
     "meta": {
       "title": "BerkahEmas — Gold Store Software",
-      "description": "Inventory, POS, buyback and reporting for gold stores. Request a BerkahEmas demo.",
+      "description": "Inventory, POS, buyback and reporting for gold stores. Try BerkahEmas free for 3 days, or buy a package through WhatsApp.",
       "keywords": "gold store software, jewelry POS, inventory, buyback, BerkahEmas"
     },
     "nav": {
@@ -331,7 +349,7 @@
       "faq": "FAQ",
       "ecosystem": "Product",
       "whatsapp": "WhatsApp",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Try Free",
       "erp": {
         "title": "Gold ERP Software",
         "desc": "Complete POS & inventory system"
@@ -344,7 +362,7 @@
       "titleStart": "BerkahEmas — ",
       "titleHighlight": "Gold Store Software",
       "subheadline": "Inventory, POS, buyback and reporting in one application. See how BerkahEmas fits your store’s daily workflow.",
-      "ctaPrimary": "Request a BerkahEmas Demo",
+      "ctaPrimary": "Try Free for 3 Days",
       "ctaSecondary": "Explore Features",
       "highlights": [
         "Inventory",
@@ -420,28 +438,28 @@
       ]
     },
     "howItWorks": {
-      "title": "Start with a product demo",
-      "subtitle": "Discuss your store’s workflow before choosing a plan.",
+      "title": "From signup to your store workspace",
+      "subtitle": "A short signup, with store details completed when you are ready.",
       "steps": [
         {
           "num": "01",
-          "title": "Request a demo",
-          "desc": "Tell us about your store and the tasks you want to review."
+          "title": "Start your trial",
+          "desc": "Enter your store name and email. The Trial package is selected automatically."
         },
         {
           "num": "02",
-          "title": "Review the workflows",
-          "desc": "Explore inventory, POS, buyback and reports during the demo."
+          "title": "Verify your email",
+          "desc": "Open the email link and set your name and password."
         },
         {
           "num": "03",
-          "title": "Discuss your requirements",
-          "desc": "Review users, branches, data preparation and device requirements."
+          "title": "Explore your ERP",
+          "desc": "We prepare your private workspace. Your three-day trial begins when it is ready."
         },
         {
           "num": "04",
-          "title": "Choose a plan",
-          "desc": "Confirm the current offer and next steps with the team."
+          "title": "Choose a paid package",
+          "desc": "Contact us on WhatsApp to buy a package and continue with the same store."
         }
       ]
     },
@@ -483,7 +501,7 @@
     "testimonials": null,
     "pricing": {
       "title": "Transparent Plans for Every Jewelry Retailer",
-      "subtitle": "Confirm the current price, included features and onboarding requirements with the team.",
+      "subtitle": "Try Starter features free for 3 days. Buy a paid package through WhatsApp when you are ready.",
       "periodMonth": "/ month",
       "popularBadge": "Featured",
       "tiers": [
@@ -502,7 +520,7 @@
             "Thermal Jewelry Label & Certificate Printing",
             "Daily Sales & Revenue Reports"
           ],
-          "ctaText": "Request a Demo",
+          "ctaText": "Buy Starter",
           "badge": null
         },
         {
@@ -520,7 +538,7 @@
             "Inter-Branch Stock Transfer with Waybills",
             "Complimentary Excel Data Migration by Experts"
           ],
-          "ctaText": "Request a Demo"
+          "ctaText": "Buy Professional"
         },
         {
           "name": "Enterprise",
@@ -529,14 +547,14 @@
           "period": "",
           "featured": false,
           "features": [],
-          "ctaText": "Request a Demo",
+          "ctaText": "Buy Enterprise",
           "badge": null
         }
       ],
       "banner": null
     },
     "faq": {
-      "title": "Questions before a demo",
+      "title": "Questions before you start",
       "subtitle": "Start with the workflows that matter to your store.",
       "items": [
         {
@@ -544,8 +562,8 @@
           "a": "BerkahEmas is gold-store software with inventory, POS, buyback and reporting workflows."
         },
         {
-          "q": "Can I see the software before choosing a plan?",
-          "a": "Request a demo through WhatsApp and tell the team which workflows you would like to review."
+          "q": "Can I try the ERP before subscribing?",
+          "a": "Yes. Choose Try Free, enter your store name and email, verify your email, and set your password. The Trial package has Starter features and limits for 3 days after your store is ready, with no credit card required."
         },
         {
           "q": "Can I use my store’s details on invoices?",
@@ -562,6 +580,10 @@
         {
           "q": "Can I use a dedicated subdomain or my own business domain?",
           "a": "Your store uses a dedicated subdomain prepared for your business. For your own business domain, confirm availability and setup requirements with the team during a demo."
+        },
+        {
+          "q": "How do I buy a package after the trial?",
+          "a": "Choose a package in Pricing to open WhatsApp with the package name included. Our team will help with payment and activation so you can continue with the same store."
         }
       ]
     },
@@ -580,8 +602,8 @@
       "contactSupport": "Contact Support"
     },
     "whatsapp": {
-      "tooltip": "Request a BerkahEmas demo",
-      "prefill": "Hello BerkahEmas, I would like a demo of the gold-store software."
+      "tooltip": "Discuss packages on WhatsApp",
+      "prefill": "Hello BerkahEmas, I would like to discuss a package for my gold store."
     },
     "storeAccess": {
       "eyebrow": "Store Data & Access",
@@ -607,7 +629,7 @@
           "note": "Availability confirmed during the demo."
         }
       ],
-      "cta": "Discuss store access during a demo"
+      "cta": "Try your own store workspace"
     },
     "goldReference": {
       "eyebrow": "Market reference",
@@ -630,6 +652,20 @@
       "sourceAndTime": "Source & publication time",
       "notPublished": "Not provided by source",
       "detailsUnavailable": "See available denominations and current prices on the official ANTAM page below."
+    },
+    "trial": {
+      "badge": "Trial · Free for 3 days",
+      "title": "Start with a free Trial package",
+      "description": "Try the same features and limits as Starter in a private workspace for your store. Verify your email, set your password, and explore the ERP.",
+      "highlights": [
+        "1 store branch",
+        "Up to 3 users",
+        "1 GB storage"
+      ],
+      "cta": "Try Free for 3 Days",
+      "note": "No credit card. Your 3 days begin when your store is ready.",
+      "finalTitle": "Try it in your own store workspace.",
+      "salesCta": "Buy a package on WhatsApp"
     }
   }
 }

@@ -1,4 +1,4 @@
-// Static, multilingual content arrays for AstaEnterprise
+// Static, multilingual content arrays for BerkahEmas
 // Each item has { en, id } variants where applicable
 
 export const ecosystem = [

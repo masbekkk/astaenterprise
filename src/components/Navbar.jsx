@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { useApp } from '@/context/AppContext';
+import { getTrialUrl } from '@/services/conversionLinks';
 
 export default function Navbar() {
   const { t, lang } = useApp();
@@ -17,12 +18,12 @@ export default function Navbar() {
       <nav className="hidden items-center gap-5 xl:flex" aria-label={lang === 'en' ? 'Main navigation' : 'Navigasi utama'}>
         {links.map(([id, label]) => <a key={id} href={`#${id}`} className="text-sm font-semibold text-muted-foreground hover:text-primary">{label}</a>)}
       </nav>
-      <div className="hidden items-center gap-4 md:flex"><LanguageSwitcher /><a href="#demo" className="rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white hover:bg-brand-700">{t.nav.requestDemo}</a></div>
+      <div className="hidden items-center gap-4 md:flex"><LanguageSwitcher /><a href={getTrialUrl(lang)} className="rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white hover:bg-brand-700">{t.nav.requestDemo}</a></div>
       <button type="button" className="rounded-lg p-2 text-primary xl:hidden" aria-expanded={open} aria-controls="mobile-navigation" aria-label={lang === 'en' ? 'Toggle menu' : 'Buka menu'} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
     </div>
     {open && <nav id="mobile-navigation" className="space-y-4 border-t border-border px-6 py-5 xl:hidden">
       {links.map(([id,label]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)} className="block py-2 text-sm font-semibold text-foreground">{label}</a>)}
-      <div className="flex flex-wrap items-center gap-4"><LanguageSwitcher /><a href="#demo" onClick={() => setOpen(false)} className="rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white">{t.nav.requestDemo}</a></div>
+      <div className="flex flex-wrap items-center gap-4"><LanguageSwitcher /><a href={getTrialUrl(lang)} onClick={() => setOpen(false)} className="rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white">{t.nav.requestDemo}</a></div>
     </nav>}
   </header>;
 }

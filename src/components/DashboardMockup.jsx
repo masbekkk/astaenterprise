@@ -35,7 +35,7 @@ export default function DashboardMockup() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#3a3a3d]" />
           </div>
           <div className="text-[11px] tracking-[0.2em] text-[#8a8a8e] uppercase">
-            astaenterprise · owner dashboard
+            BerkahEmas · owner dashboard
           </div>
           <div className="text-[11px] text-[#8a8a8e] font-mono">v1.0</div>
         </div>

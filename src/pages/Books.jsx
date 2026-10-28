@@ -19,10 +19,10 @@ export default function Books() {
   return (
     <div data-testid="books-page">
       <SEO
-        title={lang === "id" ? "Buku & Publikasi Bisnis Emas - AstaEnterprise" : "Gold Business Books & Publications - AstaEnterprise"}
-        description={lang === "id" ? "Koleksi panduan, modul, dan buku referensi industri emas terlengkap yang ditulis oleh para ahli di AstaEnterprise." : "The most comprehensive collection of gold industry guides, modules, and reference books written by experts at AstaEnterprise."}
+        title={lang === "id" ? "Buku & Publikasi Bisnis Emas - BerkahEmas" : "Gold Business Books & Publications - BerkahEmas"}
+        description={lang === "id" ? "Koleksi panduan, modul, dan buku referensi industri emas terlengkap yang ditulis oleh para ahli di BerkahEmas." : "The most comprehensive collection of gold industry guides, modules, and reference books written by experts at BerkahEmas."}
         canonical="https://berkahemas.web.id/books"
-        keywords="buku bisnis emas, modul taksir emas, panduan investasi emas, buku asta enterprise, gold business books, gold appraisal module, gold investment guide"
+        keywords="buku bisnis emas, modul taksir emas, panduan investasi emas, buku berkahemas, gold business books, gold appraisal module, gold investment guide"
       />
       <section className="border-b border-border" data-testid="books-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">
@@ -55,7 +55,7 @@ export default function Books() {
                   >
                     <div className="flex items-center justify-between">
                       <span className={`text-[10px] uppercase tracking-[0.24em] ${a.sub}`}>
-                        astaenterprise
+                        BerkahEmas
                       </span>
                       <BookOpen className="h-4 w-4 opacity-80" />
                     </div>

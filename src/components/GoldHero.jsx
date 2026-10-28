@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import BrowserMockup from '@/components/BrowserMockup';
 import { useApp } from '@/context/AppContext';
+import { getTrialUrl } from '@/services/conversionLinks';
 
 export default function GoldHero() {
   const { t, lang } = useApp();
@@ -21,9 +22,10 @@ export default function GoldHero() {
         <h1 className="hero-title">{t.hero.editorialStart}<em>{t.hero.editorialHighlight}</em></h1>
         <p className="hero-description">{t.hero.subheadline}</p>
         <div className="mt-8 flex flex-wrap items-center gap-5">
-          <a href="#demo" data-testid="hero-primary-cta" className="hero-primary">{t.hero.ctaPrimary}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
+          <a href={getTrialUrl(lang)} data-testid="hero-primary-cta" className="hero-primary">{t.hero.ctaPrimary}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
           <a href="#features" className="hero-secondary">{t.hero.ctaSecondary}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
         </div>
+        <p className="mt-4 text-xs text-ivory/75">{t.trial.note}</p>
         <ul className="hero-highlights">{t.hero.highlights.map(label => <li key={label}><Check className="h-3.5 w-3.5" aria-hidden="true" />{label}</li>)}</ul>
       </div>
       <figure className="hero-product relative z-10 min-w-0">

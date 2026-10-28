@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import GoldHero from "@/components/GoldHero";
+import TrialOffer from "@/components/TrialOffer";
+import { getTrialUrl, getPurchaseUrl } from "@/services/conversionLinks";
+import { getPaidPlanTiers } from "@/services/planPresentation";
 import GoldPriceReference from "@/components/GoldPriceReference";
 import {
   CheckCircle2,
@@ -52,62 +55,10 @@ export default function Home() {
     };
   }, []);
 
-  // Compute live pricing tiers with language & fallback support
-  const pricingTiers = useMemo(() => {
-    if (!apiPlans || apiPlans.length === 0) {
-      return t.pricing?.tiers || [];
-    }
-
-    const fallbackTiers = t.pricing?.tiers || [];
-    const isIndonesian = lang === "id";
-
-    return apiPlans.map((plan, idx) => {
-      const planKey = (plan.plan || plan.name || "").toLowerCase();
-      const localTier =
-        fallbackTiers.find(
-          (lt) =>
-            lt.name.toLowerCase() === planKey ||
-            lt.name.toLowerCase() === (plan.display_name || "").toLowerCase()
-        ) || fallbackTiers[idx];
-
-      const priceMonthly = Number(plan.price_monthly) || 0;
-      let formattedPrice = "";
-      if (priceMonthly > 0) {
-        formattedPrice = isIndonesian
-          ? `Rp ${priceMonthly.toLocaleString("id-ID")}`
-          : `Rp ${priceMonthly.toLocaleString("en-US")}`;
-      } else {
-        formattedPrice = isIndonesian ? "Kustom" : "Custom";
-      }
-
-      const period =
-        priceMonthly > 0
-          ? t.pricing?.periodMonth || (isIndonesian ? "/ bulan" : "/ month")
-          : "";
-
-      const isFeatured = Boolean(plan.featured || plan.is_popular || localTier?.featured);
-      const badge = isFeatured
-        ? localTier?.badge || t.pricing?.popularBadge || (isIndonesian ? "Paling Populer" : "Most Popular")
-        : null;
-
-      // Use localized features if available, otherwise API features
-      const features =
-        isIndonesian && localTier?.features?.length > 0
-          ? localTier.features
-          : plan.features || localTier?.features || [];
-
-      return {
-        name: isIndonesian && localTier?.name ? localTier.name : plan.display_name || plan.name,
-        tagline: isIndonesian && localTier?.tagline ? localTier.tagline : plan.tagline || plan.description,
-        price: formattedPrice,
-        period,
-        featured: isFeatured,
-        badge,
-        features,
-        ctaText: localTier?.ctaText || (isIndonesian ? "Pilih Paket" : "Choose Plan"),
-      };
-    });
-  }, [apiPlans, t.pricing, lang]);
+  const pricingTiers = useMemo(
+    () => getPaidPlanTiers(apiPlans, t.pricing, lang),
+    [apiPlans, t.pricing, lang]
+  );
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -267,7 +218,7 @@ export default function Home() {
                 );
               })}
             </div>
-            <a href="#demo" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-brand-700 underline decoration-brand-300 underline-offset-4 hover:text-brand-800">{t.storeAccess.cta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
+            <a href={getTrialUrl(lang)} className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-brand-700 underline decoration-brand-300 underline-offset-4 hover:text-brand-800">{t.storeAccess.cta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
           </div>
         </section>
       )}
@@ -295,7 +246,7 @@ export default function Home() {
                 const isActive = activeTab === idx;
                 return (
                   <button
-                    key={mod.id}
+                    key={mod.id || mod.title}
                     type="button"
                     aria-pressed={isActive}
                     onClick={() => setActiveTab(idx)}
@@ -335,7 +286,7 @@ export default function Home() {
                   </ul>
                   <div className="pt-3">
                     <Button className="rounded-lg bg-primary hover:bg-brand-700 text-white font-bold text-sm px-6 shadow-md shadow-brand-600/20" asChild>
-                      <a href="#demo">
+                      <a href={getTrialUrl(lang)}>
                         {t.nav.requestDemo}
                       </a>
                     </Button>
@@ -414,6 +365,7 @@ export default function Home() {
               </p>
             </div>
 
+            <TrialOffer />
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
               {pricingTiers.map((tier) => (
                 <div
@@ -459,7 +411,7 @@ export default function Home() {
                             : "bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-200"
                         }`}
                        asChild>
-                      <a href="#demo">
+                      <a href={getPurchaseUrl(tier.name, lang)} target="_blank" rel="noopener noreferrer" data-testid="purchase-plan">
                         {tier.ctaText}
                       </a>
                     </Button>
@@ -483,7 +435,7 @@ export default function Home() {
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button className="h-12 px-8 rounded-lg bg-primary hover:bg-brand-700 text-white font-bold text-sm shadow-sm shadow-brand-600/25" asChild>
                       <a
-                    href="https://wa.me/6285183003076?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
+                    href={getPurchaseUrl(null, lang)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -552,33 +504,16 @@ export default function Home() {
         </section>
       )}
 
-      {/* 9. DEMO REQUEST CTA SECTION */}
       <section id="demo" className="demo-invitation py-20 md:py-28 bg-background border-t border-brand-900/10">
         <div className="max-w-4xl mx-auto px-6 md:px-10 text-center space-y-6">
-          <span className="inline-block px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-700 text-white shadow-sm">
-            {t.hero?.badge}
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-zinc-950 font-editorial">
-            {t.hero?.titleStart}
-            <span className="text-gold">
-              {t.hero?.titleHighlight}
-            </span>
-          </h2>
-          <p className="text-zinc-600 text-base sm:text-lg max-w-2xl mx-auto">
-            {t.hero?.subheadline}
-          </p>
+          <span className="eyebrow">{t.trial.badge}</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-zinc-950 font-editorial">{t.trial.finalTitle}</h2>
+          <p className="text-zinc-600 text-base sm:text-lg max-w-2xl mx-auto">{t.trial.description}</p>
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <Button className="h-12 px-8 rounded-lg bg-primary hover:bg-brand-700 text-white font-bold text-base shadow-sm" asChild>
-                      <a
-              href="https://wa.me/6285183003076?text=Halo%20BerkahEmas%2C%20saya%20tertarik%20konsultasi%20software%20toko%20emas"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                {t.hero?.ctaPrimary}
-              </a>
-                    </Button>
+            <a href={getTrialUrl(lang)} className="inline-flex items-center gap-3 rounded-lg bg-primary px-8 py-4 font-bold text-white hover:bg-brand-700">{t.trial.cta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
+            <a href={getPurchaseUrl(null, lang)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-primary underline underline-offset-4"><MessageCircle className="h-4 w-4" aria-hidden="true" />{t.trial.salesCta}</a>
           </div>
+          <p className="text-xs text-zinc-500">{t.trial.note}</p>
         </div>
       </section>
     </div>

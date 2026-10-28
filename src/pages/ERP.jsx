@@ -15,7 +15,7 @@ export default function ERPPage() {
   return (
     <div data-testid="erp-page" className="bg-[#FDFBF7] text-zinc-900 min-h-screen">
       <SEO
-        title="Solusi ERP Bisnis Toko Emas & Berlian Enterprise - AstaEnterprise"
+        title="Solusi ERP Bisnis Toko Emas & Berlian Enterprise - BerkahEmas"
         description="Sistem ERP khusus bisnis emas. Modul POS retail, inventaris kadar & gramasi, buyback, transfer multi-cabang, dan laporan keuangan terintegrasi."
         canonical="https://berkahemas.web.id/"
         keywords="erp emas, software toko emas, aplikasi kasir emas, pos retail emas, manajemen gadai emas, inventory emas, gold erp, gold shop software"
@@ -57,7 +57,7 @@ export default function ERPPage() {
             <div className="lg:col-span-6">
               <BrowserMockup
                 src="/assets/screenshots/dashboard.webp"
-                alt="Dashboard ERP AstaEnterprise"
+                alt="Dashboard ERP BerkahEmas"
                 url="app.berkahemas.web.id/dashboard"
                 badge="Live ERP"
               />
@@ -185,8 +185,8 @@ export default function ERPPage() {
           ? "Siap mentransformasi operasional toko emas Anda?"
           : "Ready to transform your gold store operations?"}
         subtitle={lang === "id"
-          ? "Jadwalkan demo dengan tim AstaEnterprise dan jelajahi platform ERP secara langsung."
-          : "Schedule a demo with the AstaEnterprise team and explore the ERP platform live."}
+          ? "Jadwalkan demo dengan tim BerkahEmas dan jelajahi platform ERP secara langsung."
+          : "Schedule a demo with the BerkahEmas team and explore the ERP platform live."}
       />
     </div>
   );

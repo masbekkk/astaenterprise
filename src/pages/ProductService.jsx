@@ -13,10 +13,10 @@ export default function ProductService() {
   return (
     <div data-testid="product-service-page">
       <SEO
-        title={lang === "id" ? "Produk & Layanan Bisnis Emas - AstaEnterprise" : "Gold Business Products & Services - AstaEnterprise"}
-        description={lang === "id" ? "Jelajahi ekosistem layanan AstaEnterprise mulai dari platform digital toko emas, sistem gadai, hingga manajemen pasok emas ritel." : "Explore the AstaEnterprise ecosystem, from digital gold shop platforms and pawn systems to retail gold supply chain management."}
+        title={lang === "id" ? "Produk & Layanan Bisnis Emas - BerkahEmas" : "Gold Business Products & Services - BerkahEmas"}
+        description={lang === "id" ? "Jelajahi ekosistem layanan BerkahEmas mulai dari platform digital toko emas, sistem gadai, hingga manajemen pasok emas ritel." : "Explore the BerkahEmas ecosystem, from digital gold shop platforms and pawn systems to retail gold supply chain management."}
         canonical="https://berkahemas.web.id/product-service"
-        keywords="layanan asta enterprise, bisnis emas ritel, suplai emas, sistem manajemen emas, retail gold business, gold supply chain, gold management system"
+        keywords="layanan berkahemas, bisnis emas ritel, suplai emas, sistem manajemen emas, retail gold business, gold supply chain, gold management system"
       />
       <section className="border-b border-border" data-testid="product-service-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">
@@ -84,8 +84,8 @@ export default function ProductService() {
           ? "Sambungkan teknologi dengan ekosistem emas Anda."
           : "Connect technology with your gold ecosystem."}
         subtitle={lang === "id"
-          ? "Pelajari bagaimana AstaEnterprise dan Asta Emas bekerja bersama."
-          : "Discover how AstaEnterprise and Asta Emas work together."}
+          ? "Pelajari bagaimana BerkahEmas dan Asta Emas bekerja bersama."
+          : "Discover how BerkahEmas and Asta Emas work together."}
       />
     </div>
   );

@@ -11,8 +11,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "astaenterprisegroup@gmail.com",
-      href: "mailto:astaenterprisegroup@gmail.com",
+      value: "hello@berkahemas.web.id",
+      href: "mailto:hello@berkahemas.web.id",
       testid: "contact-channel-email",
     },
     {
@@ -41,10 +41,10 @@ export default function Contact() {
   return (
     <div data-testid="contact-page">
       <SEO
-        title={lang === "id" ? "Hubungi Kami — Layanan Kemitraan AstaEnterprise" : "Contact Us — Partner Services of AstaEnterprise"}
-        description={lang === "id" ? "Konsultasikan kebutuhan sistem ERP atau kemitraan bisnis emas Anda dengan tim ahli kami di AstaEnterprise." : "Consult your gold business ERP needs or partnership inquiries with our expert team at AstaEnterprise."}
+        title={lang === "id" ? "Hubungi Kami — Layanan Kemitraan BerkahEmas" : "Contact Us — Partner Services of BerkahEmas"}
+        description={lang === "id" ? "Konsultasikan kebutuhan sistem ERP atau kemitraan bisnis emas Anda dengan tim ahli kami di BerkahEmas." : "Consult your gold business ERP needs or partnership inquiries with our expert team at BerkahEmas."}
         canonical="https://berkahemas.web.id/contact"
-        keywords="kontak asta enterprise, alamat asta emas, kemitraan bisnis emas, call center asta enterprise, contact asta enterprise"
+        keywords="kontak berkahemas, alamat asta emas, kemitraan bisnis emas, call center berkahemas, contact berkahemas"
       />
       <section className="border-b border-border" data-testid="contact-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16">

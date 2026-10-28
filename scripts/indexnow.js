@@ -37,7 +37,7 @@ async function submitIndexNow(endpointHost, endpointPath) {
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
         'Content-Length': Buffer.byteLength(postData),
-        'User-Agent': 'AstaEnterprise-IndexNow-Notifier/1.0'
+        'User-Agent': 'BerkahEmas-IndexNow-Notifier/1.0'
       },
       timeout: 10000
     };
@@ -80,7 +80,7 @@ async function submitIndexNow(endpointHost, endpointPath) {
 }
 
 async function run() {
-  console.log('⚡ IndexNow Protocol Trigger for AstaEnterprise');
+  console.log('⚡ IndexNow Protocol Trigger for BerkahEmas');
   console.log(`🌐 Host: ${HOST}`);
   console.log(`🔑 Key Location: ${KEY_LOCATION}`);
   console.log(`📄 URLs (${URL_LIST.length}):\n  - ${URL_LIST.join('\n  - ')}\n`);

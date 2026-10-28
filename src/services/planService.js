@@ -3,18 +3,20 @@
  * Prevents redundant network requests, eliminates layout shifts, and provides offline resilience.
  */
 
-const CACHE_KEY = "asta_subscription_plans_cache_v1";
+import brand from '@/data/brand';
+
+const CACHE_KEY = "berkahemas_subscription_plans_cache_v2";
 const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes TTL
 
 // In-memory fallback if sessionStorage is unavailable
 let memoryCache = null;
 
 export async function getSubscriptionPlans() {
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  const backendUrl = (process.env.REACT_APP_BACKEND_URL || brand.BRAND.platformUrl).replace(/\/+$/, '');
 
   // 1. If backend URL is not configured or in production without live backend, return null immediately
   // React will seamlessly use the high-performance pre-baked localized pricing tiers.
-  if (!backendUrl || backendUrl.includes("127.0.0.1") || backendUrl.includes("preview.emergentagent.com")) {
+  if (backendUrl.includes("preview.emergentagent.com")) {
     return { data: null, fromCache: false };
   }
 

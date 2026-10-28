@@ -143,7 +143,7 @@ export default function MediaDetailPage() {
   return (
     <article className="min-h-screen pb-24" data-testid={`media-detail-${article.id}`}>
       <SEO
-        title={`${article.title[lang]} - AstaEnterprise`}
+        title={`${article.title[lang]} - BerkahEmas`}
         description={article.excerpt[lang]}
         image={article.image}
         canonical={`https://berkahemas.web.id/media/${article.slug}`}
