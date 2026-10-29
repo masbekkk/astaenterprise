@@ -40,8 +40,13 @@ export default function GoldPriceReference() {
   const date = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'id-ID', { timeZone: 'Asia/Jakarta', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
   const weight = new Intl.NumberFormat(lang === 'en' ? 'en-US' : 'id-ID', { maximumFractionDigits: 3 });
   const retail = state.records.filter(record => record.priceType === 'retail');
+  const empty = state.status === 'unavailable' && state.records.length === 0;
   return <section id="gold-reference" aria-labelledby="gold-reference-title" className="gold-reference font-sans">
     <div className="mx-auto max-w-7xl px-6 md:px-10">
+      {empty ? <div className="rounded-lg border border-border bg-surface px-6 py-5 md:flex md:items-center md:justify-between md:gap-8">
+        <div><h2 id="gold-reference-title" className="font-editorial text-2xl">{copy.title}</h2><p className="mt-2 text-sm text-muted-foreground">{copy.unavailable}. {copy.unavailableHint}</p></div>
+        <a className="source-link mt-4 min-h-11 md:mt-0" href={OFFICIAL_GOLD_URL} target="_blank" rel="noopener noreferrer">{copy.sourceLink}<ArrowUpRight className="h-4 w-4" aria-hidden="true" /></a>
+      </div> : <>
       <div className="gold-reference-panel">
         <div className="space-y-3">
           <p className="eyebrow flex items-center gap-2"><Coins className="h-4 w-4" aria-hidden="true" />{copy.eyebrow}</p>
@@ -88,6 +93,7 @@ export default function GoldPriceReference() {
         </div>
       </details>
       <p className="mt-4 max-w-4xl text-xs leading-relaxed text-muted-foreground">{copy.note}</p>
+      </>}
     </div>
   </section>;
 }

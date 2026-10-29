@@ -1,0 +1,59 @@
+{
+  "before": {
+    "hash": "#pricing",
+    "y": 6344
+  },
+  "after": {
+    "path": "/en",
+    "hash": "#pricing",
+    "y": 0
+  },
+  "switches": [
+    {
+      "text": "ID\nEN",
+      "pills": [
+        {
+          "text": "ID",
+          "color": "rgb(52, 74, 99)"
+        },
+        {
+          "text": "EN",
+          "color": "rgb(255, 255, 255)",
+          "pill": {
+            "x": 391.453125,
+            "y": 22,
+            "width": 44.4375,
+            "height": 36,
+            "top": 22,
+            "right": 435.890625,
+            "bottom": 58,
+            "left": 391.453125
+          }
+        }
+      ]
+    },
+    {
+      "text": "ID\nEN",
+      "pills": [
+        {
+          "text": "ID",
+          "color": "rgb(52, 74, 99)"
+        },
+        {
+          "text": "EN",
+          "color": "rgb(255, 255, 255)",
+          "pill": {
+            "x": 69.046875,
+            "y": 418,
+            "width": 44.4375,
+            "height": 36,
+            "top": 418,
+            "right": 113.484375,
+            "bottom": 454,
+            "left": 69.046875
+          }
+        }
+      ]
+    }
+  ]
+}

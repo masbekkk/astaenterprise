@@ -1,6 +1,6 @@
 import React, { act } from 'react';
 import { createRoot } from 'react-dom/client';
-import { getSubscriptionPlans, getInitialCachedPlans } from '@/services/planService';
+import { getSubscriptionPlans, getInitialCachedPlanResult } from '@/services/planService';
 import { getPaidPlanTiers } from '@/services/planPresentation';
 import { getTrialUrl } from '@/services/conversionLinks';
 import content from '@/data/brand-content.json';
@@ -10,7 +10,7 @@ let mockLang = 'id';
 jest.mock('@/context/AppContext', () => ({
   useApp: () => ({ t: require('../data/brand-content.json')[mockLang], lang: mockLang }),
 }));
-jest.mock('@/services/planService', () => ({ getSubscriptionPlans: jest.fn(), getInitialCachedPlans: jest.fn() }));
+jest.mock('@/services/planService', () => ({ getSubscriptionPlans: jest.fn(), getInitialCachedPlanResult: jest.fn() }));
 jest.mock('@/components/GoldPriceReference', () => () => null);
 
 const plans = [
@@ -24,8 +24,8 @@ let root;
 beforeEach(() => {
   global.IS_REACT_ACT_ENVIRONMENT = true;
   mockLang = 'id';
-  getInitialCachedPlans.mockReturnValue(null);
-  getSubscriptionPlans.mockResolvedValue({ data: plans });
+  getInitialCachedPlanResult.mockReturnValue({ data: null, status: 'static' });
+  getSubscriptionPlans.mockResolvedValue({ data: plans, status: 'live' });
   container = document.createElement('div');
   document.body.appendChild(container);
   root = createRoot(container);
@@ -54,13 +54,14 @@ test('live Trial plan uses signup while each paid package opens WhatsApp with it
 
 test('English signup preserves language and paid fallback remains available when the API is unavailable', async () => {
   mockLang = 'en';
-  getSubscriptionPlans.mockResolvedValue({ data: null });
+  getSubscriptionPlans.mockResolvedValue({ data: null, status: 'static' });
   await act(async () => root.render(<Home />));
   expect(container.querySelector('[data-testid="hero-primary-cta"]').href).toBe('https://app.berkahemas.web.id/start-trial?lang=en');
   const purchases = [...container.querySelectorAll('[data-testid="purchase-plan"]')];
   expect(purchases).toHaveLength(3);
   expect(purchases[0].textContent).toContain('Buy Starter');
   expect(new URL(purchases[0].href).searchParams.get('text')).toContain('buy the Starter package');
+  expect(container.querySelector('[data-testid="pricing-status"]').textContent).toContain('Reference package prices');
 });
 
 test('Trial API rows never shift localized paid plan features', () => {

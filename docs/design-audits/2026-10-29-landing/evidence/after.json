@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "lang": "id",
+      "width": 390,
+      "skip": {
+        "text": "Lewati ke konten",
+        "visible": true
+      },
+      "skipTarget": "main-content",
+      "pricing": "Harga paket referensi; konfirmasi harga terbaru sebelum membeli.\nPeriksa lagi",
+      "screenshotLink": "/assets/screenshots/inventory.webp",
+      "emptyGold": "Harga Emas Hari Ini\n\nData harga belum tersedia. Periksa referensi harga di halaman resmi ANTAM.\n\nLihat referensi resmi ANTAM",
+      "overflow": 0,
+      "menu": {
+        "closed": true,
+        "focus": true,
+        "mobileControlsVisible": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "skip": {
+        "text": "Skip to content",
+        "visible": true
+      },
+      "skipTarget": "main-content",
+      "pricing": "Reference package prices; confirm the latest price before buying.\nCheck again",
+      "screenshotLink": "/assets/screenshots/inventory.webp",
+      "emptyGold": "Gold prices today\n\nPrice data is not available yet. Check the official ANTAM page for published prices.\n\nView the official ANTAM reference",
+      "overflow": 0,
+      "menu": {
+        "closed": true,
+        "focus": true,
+        "mobileControlsVisible": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "id",
+      "width": 1440,
+      "skip": {
+        "text": "Lewati ke konten",
+        "visible": true
+      },
+      "skipTarget": "main-content",
+      "pricing": "Harga paket referensi; konfirmasi harga terbaru sebelum membeli.\nPeriksa lagi",
+      "screenshotLink": "/assets/screenshots/inventory.webp",
+      "emptyGold": "Harga Emas Hari Ini\n\nData harga belum tersedia. Periksa referensi harga di halaman resmi ANTAM.\n\nLihat referensi resmi ANTAM",
+      "overflow": 0,
+      "menu": null,
+      "errors": []
+    }
+  ],
+  "anchor": {
+    "hash": "#pricing",
+    "y": 6225,
+    "targetY": 90.6875
+  }
+}

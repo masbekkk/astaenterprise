@@ -25,6 +25,7 @@ export default function GoldHero() {
           <a href={getTrialUrl(lang)} data-testid="hero-primary-cta" className="hero-primary">{t.hero.ctaPrimary}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
           <a href="#features" className="hero-secondary">{t.hero.ctaSecondary}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
         </div>
+        <a href="#pricing" className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-ivory underline decoration-gold underline-offset-4 hover:text-gold">{t.hero.ctaPlans}<ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" /></a>
         <p className="mt-4 text-xs text-ivory/75">{t.trial.note}</p>
         <ul className="hero-highlights">{t.hero.highlights.map(label => <li key={label}><Check className="h-3.5 w-3.5" aria-hidden="true" />{label}</li>)}</ul>
       </div>

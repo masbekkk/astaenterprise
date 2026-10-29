@@ -29,35 +29,36 @@ import { Button } from "@/components/ui/button";
 import BrowserMockup from "@/components/BrowserMockup";
 import SEO from "@/components/SEO";
 import { useApp } from "@/context/AppContext";
-import { getSubscriptionPlans, getInitialCachedPlans } from "@/services/planService";
+import { getSubscriptionPlans, getInitialCachedPlanResult } from "@/services/planService";
 
 export default function Home() {
   const { t, lang } = useApp();
   const [activeTab, setActiveTab] = useState(0);
   const [openFaq, setOpenFaq] = useState(null);
-  const [apiPlans, setApiPlans] = useState(() => getInitialCachedPlans());
+  const [planResult, setPlanResult] = useState(() => getInitialCachedPlanResult());
+  const [planLoading, setPlanLoading] = useState(false);
 
-  // Fetch / revalidate subscription plans using Frontend SWR Caching
+  // Fetch plans once on entry; the status remains explicit if the service fails.
   useEffect(() => {
-    let isMounted = true;
-
-    const loadPlans = async () => {
-      const result = await getSubscriptionPlans();
-      if (isMounted && result.data) {
-        setApiPlans(result.data);
-      }
-    };
-
-    loadPlans();
-
-    return () => {
-      isMounted = false;
-    };
+    let active = true;
+    getSubscriptionPlans().then(result => {
+      if (active) setPlanResult(result);
+    });
+    return () => { active = false; };
   }, []);
 
+  const refreshPlans = async (forceRefresh = true) => {
+    setPlanLoading(true);
+    try {
+      setPlanResult(await getSubscriptionPlans({ forceRefresh }));
+    } finally {
+      setPlanLoading(false);
+    }
+  };
+
   const pricingTiers = useMemo(
-    () => getPaidPlanTiers(apiPlans, t.pricing, lang),
-    [apiPlans, t.pricing, lang]
+    () => getPaidPlanTiers(planResult.data, t.pricing, lang),
+    [planResult.data, t.pricing, lang]
   );
 
   const toggleFaq = (index) => {
@@ -87,11 +88,10 @@ export default function Home() {
       />
 
       <GoldHero />
-      <GoldPriceReference />
 
       {/* 2. PAIN POINTS SECTION */}
       {t.painPoints && (
-        <section className="py-20 md:py-28 relative">
+        <section className="py-14 md:py-28 relative">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
               <span className="eyebrow">
@@ -134,8 +134,8 @@ export default function Home() {
 
       {/* 3. DEEP DIVE FEATURES SECTION */}
       {t.features && (
-        <section id="features" className="py-20 md:py-28 bg-background border-y border-brand-900/5">
-          <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-28">
+        <section id="features" className="py-14 md:py-28 bg-background border-y border-brand-900/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16 md:space-y-28">
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="eyebrow">
                 {t.nav?.features || "Fitur Unggulan"}
@@ -197,7 +197,7 @@ export default function Home() {
       )}
 
       {t.storeAccess && (
-        <section id="store-access" aria-labelledby="store-access-title" className="scroll-mt-24 border-b border-brand-200 bg-brand-50/50 py-20 md:py-24">
+        <section id="store-access" aria-labelledby="store-access-title" className="scroll-mt-24 border-b border-brand-200 bg-brand-50/50 py-14 md:py-24">
           <div className="mx-auto max-w-7xl px-6 md:px-10">
             <div className="mb-10 max-w-2xl space-y-3">
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand-700">{t.storeAccess.eyebrow}</p>
@@ -225,7 +225,7 @@ export default function Home() {
 
       {/* 5. INTERACTIVE MODULE GALLERY */}
       {galleryModules.length > 0 && (
-        <section id="gallery" className="py-20 md:py-28 bg-background border-y border-brand-900/5">
+        <section id="gallery" className="py-14 md:py-28 bg-background border-y border-brand-900/5">
           <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="eyebrow">
@@ -311,7 +311,7 @@ export default function Home() {
 
       {/* 4. HOW IT WORKS SECTION */}
       {t.howItWorks && (
-        <section id="how-it-works" className="py-20 md:py-28 relative">
+        <section id="how-it-works" className="py-14 md:py-28 relative">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
               <span className="eyebrow">
@@ -351,7 +351,7 @@ export default function Home() {
 
       {/* 7. PRICING SECTION (Live API + i18n Fallback) */}
       {t.pricing && (
-        <section id="pricing" className="py-20 md:py-28 bg-background border-y border-brand-900/5">
+        <section id="pricing" className="py-14 md:py-28 bg-background border-y border-brand-900/5">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
               <span className="eyebrow">
@@ -366,6 +366,10 @@ export default function Home() {
             </div>
 
             <TrialOffer />
+            <div className="mb-8 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-brand-200 bg-surface px-4 py-3 text-sm text-muted-foreground" role="status" aria-live="polite" data-testid="pricing-status">
+              <span>{t.pricingSource[planResult.status || 'static']}</span>
+              {planResult.status !== 'live' && <button type="button" onClick={() => refreshPlans()} disabled={planLoading} className="font-semibold text-primary underline underline-offset-4 disabled:opacity-60">{planLoading ? t.pricingSource.checking : t.pricingSource.retry}</button>}
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
               {pricingTiers.map((tier) => (
                 <div
@@ -455,7 +459,7 @@ export default function Home() {
 
       {/* 8. FAQ SECTION */}
       {t.faq && (
-        <section id="faq" className="py-20 md:py-28 relative">
+        <section id="faq" className="py-14 md:py-28 relative">
           <div className="max-w-4xl mx-auto px-6 md:px-10 space-y-12">
             <div className="text-center space-y-3">
               <span className="eyebrow">
@@ -504,7 +508,8 @@ export default function Home() {
         </section>
       )}
 
-      <section id="demo" className="demo-invitation py-20 md:py-28 bg-background border-t border-brand-900/10">
+      <GoldPriceReference />
+      <section id="demo" className="demo-invitation py-14 md:py-28 bg-background border-t border-brand-900/10">
         <div className="max-w-4xl mx-auto px-6 md:px-10 text-center space-y-6">
           <span className="eyebrow">{t.trial.badge}</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-zinc-950 font-editorial">{t.trial.finalTitle}</h2>

@@ -13,11 +13,25 @@ Aim for 70% light surfaces, 25% blue, and 5% gold. Use 8–12px corners, fine ru
 Preserve screenshot proportions and use fictional demo data. Never recolor the product screenshots.
 
 The website sells ready-to-use gold-store software. Lead with inventory, POS, buyback and reports;
-the main CTA is Minta Demo BerkahEmas. Existing technical domains and contacts remain in use.
+the main CTA starts a free three-day trial on the platform. Paid-package actions open WhatsApp sales,
+while assisted product demo/contact remains a separate path. Existing technical domains and contacts remain in use.
 Use no unsupported customer counts, ratings, certifications, speed promises or testimonials.
 Client metadata and prerendering share `src/data/brand.js` and the bilingual content JSON.
 
 Use upright Marcellus at weight 400; Inter uses the requested 300-700 range. Small labels, controls, numbers and code-style labels use Inter.
+
+## Landing-page navigation and states
+
+Keep the blue, ivory, and gold identity while making trial and paid paths distinct in both languages.
+Pricing must identify whether values came from the subscription service, a saved response, or static reference copy;
+if the service cannot confirm an update, advise visitors to confirm prices with sales and offer a retry.
+Switching language should preserve a valid section anchor. The expanded small-screen menu closes with Escape,
+and keyboard users can skip directly to the main content.
+Mobile product previews retain their original proportions and offer an accessible link to the full image.
+When no gold feed is configured or usable, show a compact unavailable notice and the official source link;
+never manufacture a market price. Keep source, publication time, basis, and denomination detail when real records exist.
+The dormant contact form must not claim delivery success from an opaque response. Activating it requires a readable
+acknowledgement contract or an honest unconfirmed state and a contact fallback.
 The geometric B mark stays intact. The SVG wordmarks embed Inter, and their PNG exports and social preview match; see `public/brand/berkahemas/v1/Inter-OFL.txt` for the embedded font license.
 The gold cursor ring tracks the mouse across the page with eased movement and expands over controls.
 It hides for touch, keyboard navigation, text entry, window exit and reduced motion. Retain the native cursor.

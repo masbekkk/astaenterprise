@@ -7,15 +7,26 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import CursorFollower from "@/components/CursorFollower";
 
 export default function PageShell({ children }) {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+      return undefined;
+    }
+    const frame = window.requestAnimationFrame(() => {
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+      if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [pathname, hash]);
 
   return (
     <MotionConfig reducedMotion="user"><div className="min-h-screen flex flex-col bg-background text-foreground relative">
+      <a href="#main-content" className="sr-only focus:not-sr-only fixed left-4 top-3 z-[60] rounded-md bg-surface px-4 py-3 text-sm font-semibold text-primary shadow-md">{pathname.startsWith('/en') ? 'Skip to content' : 'Lewati ke konten'}</a>
       <Navbar />
       <motion.main
+        id="main-content"
+        tabIndex={-1}
         key={pathname}
         initial={false}
         animate={{ opacity: 1, y: 0 }}

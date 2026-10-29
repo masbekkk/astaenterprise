@@ -1,0 +1,25 @@
+const {chromium}=require('D:/Repos/asta-platform/node_modules/playwright');
+const fs=require('node:fs');
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'msedge'});
+ const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+ await page.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
+ await page.goto('http://127.0.0.1:3100/');
+ await page.locator('nav a[href="#pricing"]').click();
+ await page.waitForTimeout(300);
+ const before=await page.evaluate(()=>({hash:location.hash,y:scrollY}));
+ await page.getByTestId('language-switcher').getByRole('button',{name:'EN',exact:true}).click();
+ await page.waitForTimeout(600);
+ const after=await page.evaluate(()=>({path:location.pathname,hash:location.hash,y:scrollY}));
+ await page.setViewportSize({width:768,height:1024});
+ await page.locator('button[aria-controls="mobile-navigation"]').click();
+ await page.waitForTimeout(700);
+ await page.screenshot({path:__dirname+'/en-768-menu-settled.png'});
+ const switches=await page.getByTestId('language-switcher').evaluateAll(es=>es.map(e=>({text:e.innerText,pills:[...e.querySelectorAll('button')].map(b=>({text:b.innerText,color:getComputedStyle(b).color,pill:b.querySelector('div')?.getBoundingClientRect().toJSON()}))})));
+ await page.locator('button[aria-controls="mobile-navigation"]').click();
+ await page.setViewportSize({width:390,height:844});
+ await page.locator('#gallery').screenshot({path:__dirname+'/en-390-gallery.png'});
+ await page.locator('#gold-reference').screenshot({path:__dirname+'/en-390-gold.png'});
+ fs.writeFileSync(__dirname+'/navigation.json',JSON.stringify({before,after,switches},null,2));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

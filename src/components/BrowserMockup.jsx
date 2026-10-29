@@ -1,5 +1,6 @@
 import React from "react";
 import { Lock } from "lucide-react";
+import { useApp } from "@/context/AppContext";
 
 export default function BrowserMockup({
   src,
@@ -13,6 +14,7 @@ export default function BrowserMockup({
   aspectRatio = "aspect-[16/10]",
   priority = false,
 }) {
+  const { t } = useApp();
   return (
     <div
       className={`relative group rounded-xl p-1 transition-all duration-500 ${
@@ -78,6 +80,7 @@ export default function BrowserMockup({
           )}
         </div>
       </div>
+      {src && <a href={src} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center px-2 text-sm font-semibold text-primary underline underline-offset-4 hover:text-brand-700" aria-label={`${t.viewLargerScreenshot}: ${alt}`}>{t.viewLargerScreenshot}</a>}
     </div>
   );
 }

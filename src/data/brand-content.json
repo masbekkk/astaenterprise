@@ -28,6 +28,7 @@
       "subheadline": "Inventori, POS kasir, buyback, dan laporan dalam satu aplikasi. Kenali alur BerkahEmas untuk operasional harian toko Anda.",
       "ctaPrimary": "Coba Gratis 3 Hari",
       "ctaSecondary": "Lihat Fitur",
+      "ctaPlans": "Lihat paket dan harga",
       "highlights": [
         "Inventori",
         "POS Kasir",
@@ -163,6 +164,18 @@
       ]
     },
     "testimonials": null,
+    "viewLargerScreenshot": "Lihat gambar lebih besar (data demo)",
+    "pricingSource": {
+      "live": "Harga paket dari sistem berlangganan.",
+      "cached": "Harga paket tersimpan; konfirmasi harga terbaru sebelum membeli.",
+      "stale": "Pembaruan harga belum terkonfirmasi; konfirmasi dengan tim penjualan sebelum membeli.",
+      "static": "Harga paket referensi; konfirmasi harga terbaru sebelum membeli.",
+      "retry": "Periksa lagi",
+      "checking": "Memeriksa…"
+    },
+    "contact": {
+      "name": "Nama", "email": "Email", "phone": "Telepon", "businessName": "Nama toko", "businessType": "Jenis usaha", "message": "Pesan", "selectType": "Pilih jenis usaha", "submitInquiry": "Kirim pertanyaan", "sending": "Sedang mengirim…", "confirmed": "Pertanyaan Anda telah diterima.", "unconfirmed": "Pengiriman belum dapat dikonfirmasi. Silakan hubungi kami melalui WhatsApp.", "failed": "Pesan belum terkirim. Periksa koneksi dan coba lagi."
+    },
     "pricing": {
       "title": "Pilihan Paket Sesuai Skala Toko Emas",
       "subtitle": "Coba fitur Starter gratis 3 hari. Beli paket berlangganan melalui WhatsApp saat Anda siap.",
@@ -308,6 +321,7 @@
       "available": "Referensi publikasi terbaru",
       "stale": "Referensi terakhir tersedia · pembaruan belum terkonfirmasi",
       "unavailable": "Data harga belum tersedia",
+      "unavailableHint": "Periksa referensi harga di halaman resmi ANTAM.",
       "sourceLink": "Lihat referensi resmi ANTAM",
       "note": "Sebagai informasi referensi. Bukan harga jual toko Anda atau harga spot dunia. Ketentuan pajak dan transaksi mengikuti sumber. BerkahEmas tidak berafiliasi dengan ANTAM.",
       "detailsTitle": "Lihat detail harga & pecahan emas",
@@ -364,6 +378,7 @@
       "subheadline": "Inventory, POS, buyback and reporting in one application. See how BerkahEmas fits your store’s daily workflow.",
       "ctaPrimary": "Try Free for 3 Days",
       "ctaSecondary": "Explore Features",
+      "ctaPlans": "View plans and pricing",
       "highlights": [
         "Inventory",
         "POS",
@@ -499,6 +514,18 @@
       ]
     },
     "testimonials": null,
+    "viewLargerScreenshot": "View larger screenshot (demo data)",
+    "pricingSource": {
+      "live": "Package prices from the subscription system.",
+      "cached": "Saved package prices; confirm the latest price before buying.",
+      "stale": "The price update could not be confirmed; check with sales before buying.",
+      "static": "Reference package prices; confirm the latest price before buying.",
+      "retry": "Check again",
+      "checking": "Checking…"
+    },
+    "contact": {
+      "name": "Name", "email": "Email", "phone": "Phone", "businessName": "Store name", "businessType": "Business type", "message": "Message", "selectType": "Choose a business type", "submitInquiry": "Send inquiry", "sending": "Sending…", "confirmed": "Your inquiry was received.", "unconfirmed": "Delivery could not be confirmed. Please contact us on WhatsApp.", "failed": "The message was not sent. Check your connection and try again."
+    },
     "pricing": {
       "title": "Transparent Plans for Every Jewelry Retailer",
       "subtitle": "Try Starter features free for 3 days. Buy a paid package through WhatsApp when you are ready.",
@@ -641,6 +668,7 @@
       "available": "Latest published reference",
       "stale": "Last available reference · update not confirmed",
       "unavailable": "Price data is not available yet",
+      "unavailableHint": "Check the official ANTAM page for published prices.",
       "sourceLink": "View the official ANTAM reference",
       "note": "Reference information only. These are not your store’s selling prices or global spot prices. Refer to the source for applicable taxes and terms. BerkahEmas is independent of ANTAM.",
       "detailsTitle": "View gold prices & denominations",

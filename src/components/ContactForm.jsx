@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Check, ArrowRight } from "lucide-react";
+import brand from "@/data/brand";
 
 export default function ContactForm() {
   const { t, lang } = useApp();
@@ -41,10 +42,11 @@ export default function ContactForm() {
       if (!url) {
         throw new Error("Spreadsheet URL is not configured in .env");
       }
+      const sameOrigin = new URL(url, window.location.href).origin === window.location.origin;
 
-      await fetch(url, {
+      const response = await fetch(url, {
         method: "POST",
-        mode: "no-cors",
+        mode: sameOrigin ? "same-origin" : "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
@@ -54,30 +56,26 @@ export default function ContactForm() {
         }),
       });
 
-      setState("success");
-    } catch (err) {
-      console.error("Spreadsheet submission error:", err);
+      // A no-cors response is opaque: the request may have reached the service,
+      // but the browser cannot verify that it was accepted.
+      setState(response.ok && response.type !== 'opaque' ? "success" : "unconfirmed");
+    } catch {
       setState("idle");
-      setError(t.common.somethingWrong);
+      setError(t.contact.failed);
     }
   };
 
   if (state === "success") {
     return (
-      <div
+      <div role="status" aria-live="polite"
         data-testid="contact-success"
         className="rounded-lg border border-border bg-[hsl(var(--surface))] p-8 md:p-10 flex items-start gap-4"
       >
-        <span className="inline-flex h-9 w-9 rounded-full items-center justify-center bg-[#5A0F1B] text-[#F7F4EF]">
+        <span className="inline-flex h-9 w-9 rounded-full items-center justify-center bg-primary text-primary-foreground">
           <Check className="h-4 w-4" />
         </span>
         <div>
-          <h3 className="font-serif text-2xl tracking-tight">{t.common.thanks}</h3>
-          <p className="mt-2 text-sm text-muted-foreground">
-            {lang === "id"
-              ? "Tim BerkahEmas akan membalas secepatnya."
-              : "The BerkahEmas team will respond within ASAP."}
-          </p>
+          <h3 className="font-serif text-2xl tracking-tight">{t.contact.confirmed}</h3>
         </div>
       </div>
     );
@@ -93,6 +91,7 @@ export default function ContactForm() {
         <Field label={t.contact.name} required>
           <Input
             required
+            autoComplete="name"
             value={form.name}
             onChange={onChange("name")}
             data-testid="contact-input-name"
@@ -103,6 +102,7 @@ export default function ContactForm() {
           <Input
             type="email"
             required
+            autoComplete="email"
             value={form.email}
             onChange={onChange("email")}
             data-testid="contact-input-email"
@@ -111,7 +111,9 @@ export default function ContactForm() {
         </Field>
         <Field label={t.contact.phone} required>
           <Input
+            type="tel"
             required
+            autoComplete="tel"
             value={form.phone}
             onChange={onChange("phone")}
             data-testid="contact-input-phone"
@@ -121,6 +123,7 @@ export default function ContactForm() {
         <Field label={t.contact.businessName} required>
           <Input
             required
+            autoComplete="organization"
             value={form.business_name}
             onChange={onChange("business_name")}
             data-testid="contact-input-business-name"
@@ -129,7 +132,7 @@ export default function ContactForm() {
         </Field>
         <Field label={t.contact.businessType} required className="md:col-span-2">
           <Select value={form.business_type} onValueChange={onChange("business_type")}>
-            <SelectTrigger className="h-11 rounded-md" data-testid="contact-select-business-type">
+            <SelectTrigger className="h-11 rounded-md" aria-label={t.contact.businessType} aria-required="true" data-testid="contact-select-business-type">
               <SelectValue placeholder={t.contact.selectType} />
             </SelectTrigger>
             <SelectContent>
@@ -153,11 +156,10 @@ export default function ContactForm() {
         </Field>
       </div>
 
-      {error && (
-        <p className="mt-4 text-sm text-destructive" data-testid="contact-error">
-          {error}
-        </p>
-      )}
+      {(error || state === 'unconfirmed') && <div role="status" aria-live="polite" className="mt-4 text-sm text-destructive" data-testid="contact-error">
+        <p>{error || t.contact.unconfirmed}</p>
+        {state === 'unconfirmed' && <a className="mt-2 inline-block font-semibold underline underline-offset-4" href={`https://wa.me/${brand.BRAND.whatsapp}?text=${encodeURIComponent(t.whatsapp.prefill)}`} target="_blank" rel="noopener noreferrer">WhatsApp</a>}
+      </div>}
 
       <div className="mt-8 flex items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
@@ -169,9 +171,9 @@ export default function ContactForm() {
           type="submit"
           disabled={state === "loading"}
           data-testid="contact-submit-button"
-          className="h-11 rounded-md bg-[#5A0F1B] hover:bg-[#7A1A28] text-[#F7F4EF] px-6 text-sm tracking-wide"
+          className="h-11 rounded-md bg-primary hover:bg-brand-700 text-primary-foreground px-6 text-sm tracking-wide"
         >
-          {state === "loading" ? "…" : t.contact.submitInquiry}
+          {state === "loading" ? t.contact.sending : t.contact.submitInquiry}
           <ArrowRight className="h-4 w-4 ml-2" />
         </Button>
       </div>
@@ -184,7 +186,7 @@ function Field({ label, required, children, className = "" }) {
     <label className={`block ${className}`}>
       <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
         {label}
-        {required && <span className="ml-0.5 text-[#5A0F1B] dark:text-[#CBB37E]">·</span>}
+        {required && <span className="ml-0.5 text-primary">·</span>}
       </span>
       <div className="mt-2">{children}</div>
     </label>

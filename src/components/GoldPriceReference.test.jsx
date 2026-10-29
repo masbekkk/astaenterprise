@@ -62,7 +62,8 @@ test('unavailable data offers the official page without invented prices or blank
   expect(container.textContent).toContain('Data harga belum tersedia');
   expect(container.textContent).not.toMatch(/Rp\s*\d/);
   expect(container.querySelector('table')).toBeNull();
-  expect(container.querySelector('details a').href).toBe('https://logammulia.com/harga-emas');
+  expect(container.querySelector('#gold-reference a').href).toBe('https://logammulia.com/harga-emas');
+  expect(container.querySelector('details')).toBeNull();
 });
 
 test('stale quotes keep their original timestamp and an explicit unconfirmed-update label', async () => {
