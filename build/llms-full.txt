@@ -1,0 +1,19 @@
+# BerkahEmas — Software Toko Emas
+
+BerkahEmas is ready-to-use software for Indonesian gold-store operations.
+Its product workflows include inventory, POS sales and invoices, buyback records, and reports.
+
+Each business is provisioned with a separate database and a dedicated store subdomain.
+Confirm custom-domain availability and setup requirements with the team during a demo.
+
+## Product links
+- Website: https://berkahemas.web.id/
+- English: https://berkahemas.web.id/en
+- Features: https://berkahemas.web.id/#features
+- Package purchases: https://wa.me/6287777809578
+- Email: hello@berkahemas.web.id
+- Instagram: https://www.instagram.com/berkahemas.web.id
+
+Start a free 3-day Trial at https://app.berkahemas.web.id/start-trial. It has the same features and resource limits as Starter. Verify your email and set a password before your private workspace is provisioned. The trial begins when the workspace is ready. Paid packages are purchased through WhatsApp.
+No customer-count, rating, certification, revenue or synchronization-speed claims are asserted here.
+Screenshots use fictional demonstration data. Confirm hardware compatibility and commercial terms with the team.
